@@ -12,11 +12,16 @@ filetype indent on
 set mouse=a
 let mapleader = ","
 
-" Find files using Telescope command-line sugar.
+" Telescope maping
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" Tree maping
+nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
+nnoremap <leader>tf <cmd>NvimTreeFindFile<cr>
+nnoremap <leader>tf <cmd>NvimTreeRefresh<cr>
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
