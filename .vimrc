@@ -39,4 +39,6 @@ Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
 
-lua require('config')
+if has('nvim')
+	lua require('config')
+endif
