@@ -1,7 +1,7 @@
 # Full configuration for neovim
 
 ## Prerequisites
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [ripgrep](https://github.com/BurntSushi/ripgrep): for telescope search
 - [nerdfonts](https://www.nerdfonts.com/): specificaly Hack Nerd Font
 
 ## Installation
