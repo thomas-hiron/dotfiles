@@ -21,7 +21,10 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " Tree maping
 nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
 nnoremap <leader>tf <cmd>NvimTreeFindFile<cr>
-nnoremap <leader>tf <cmd>NvimTreeRefresh<cr>
+nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
+
+" Keep the cursor in place while joining lines
+nnoremap J mzJ`z
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
