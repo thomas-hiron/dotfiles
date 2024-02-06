@@ -18,6 +18,10 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+" Buffers mapping
+nnoremap <C-w> :bprevious<cr>
+nnoremap <C-x> :bnext<cr>
+
 " Tree maping
 nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
 nnoremap <leader>tf <cmd>NvimTreeFindFile<cr>
@@ -34,6 +38,7 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
+" Global plugins
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
@@ -49,6 +54,8 @@ Plug 'hrsh7th/nvim-cmp'
 " Snippets plugins
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+
+" Theme plugins
 Plug 'ellisonleao/gruvbox.nvim'
 
 call plug#end()
