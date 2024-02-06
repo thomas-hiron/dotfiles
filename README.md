@@ -17,6 +17,7 @@ Then simply run `:PlugInstall`.
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter): run also `:TSUpdate php` to install PHP language
 - [lspconfig](https://phpactor.readthedocs.io/en/master/lsp/vim.html): PHP LSP
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
+- [gruvbox](https://github.com/ellisonleao/gruvbox.nvim): pastel theme
 
 ## Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.
