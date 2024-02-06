@@ -23,3 +23,11 @@ Then simply run `:PlugInstall`.
 2. Run `:PlugInstall`
 3. If configuration is necessary, create a lua file in `lua/config`
 4. Require it in `lua/config/init.lua`
+
+## PHPActor configuration
+Symlink `phpactor.json` to `$XDG_CONFIG_HOME/phpactor`, and make sure the config file is loaded:
+```bash
+phpactor status
+```
+
+![PHPActor status](docs/phpactor_status.jpg)
