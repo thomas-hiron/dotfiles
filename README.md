@@ -34,12 +34,12 @@ Then simply run `:PlugInstall`.
 - javascript
 - make
 - php
+- yaml
 
 Install parsers with this command:
 ```vim
 :TSInstall javascript
 :TSInstall make
-:TSInstall php
 ```
 
 ## LSP
@@ -59,3 +59,8 @@ phpactor status
 ```
 
 ![PHPActor status](docs/phpactor_status.jpg)
+
+## Troubleshooting
+
+### LSP
+`:LspInfo` gives great infos about errors of LSP not correctly setup
