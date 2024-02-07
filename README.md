@@ -14,16 +14,22 @@ Then simply run `:PlugInstall`.
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim): with telescope-fzf-native
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter): run also `:TSUpdate php` to install PHP language
+- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [lspconfig](https://phpactor.readthedocs.io/en/master/lsp/vim.html): PHP LSP
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [gruvbox](https://github.com/ellisonleao/gruvbox.nvim): pastel theme
+- [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
 
 ## Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.
 2. Run `:PlugInstall`
 3. If configuration is necessary, create a lua file in `lua/config`
 4. Require it in `lua/config/init.lua`
+
+## Installed tree-sitter parsers
+- javascript
+- make
+- php
 
 ## PHPActor configuration
 Symlink `phpactor.json` to `$XDG_CONFIG_HOME/phpactor`, and make sure the config file is loaded:

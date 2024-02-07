@@ -55,6 +55,10 @@ Plug 'hrsh7th/vim-vsnip'
 " Theme plugins
 Plug 'ellisonleao/gruvbox.nvim'
 
+" Mason
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+
 call plug#end()
 
 if has('nvim')

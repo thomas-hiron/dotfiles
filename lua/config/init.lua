@@ -1,4 +1,5 @@
+require('config/gruvbox')
+require('config/mason')
+require('config/nvim-cmp')
 require('config/telescope')
 require('config/tree')
-require('config/nvim-cmp')
-require('config/gruvbox')
