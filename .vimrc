@@ -43,6 +43,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCM
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
+Plug 'nelsyeung/twig.vim'
 
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-nvim-lsp'
