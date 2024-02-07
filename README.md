@@ -31,6 +31,23 @@ Then simply run `:PlugInstall`.
 - make
 - php
 
+Install parsers with this command:
+```vim
+:TSInstall javascript
+:TSInstall make
+:TSInstall php
+```
+
+## LSP
+Installing a LSP is made easy with mason-lspconfig, just run the following command to install a LSP:  
+```vim
+:LspInstall phpactor
+:LspInstall yamlls
+:LspInstall tsserver
+```
+
+The corresponding LSP are attached in `lua/config/nvim-cmp.lua`.
+
 ## PHPActor configuration
 Symlink `phpactor.json` to `$XDG_CONFIG_HOME/phpactor`, and make sure the config file is loaded:
 ```bash

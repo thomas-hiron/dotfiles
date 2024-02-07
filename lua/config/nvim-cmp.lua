@@ -35,3 +35,7 @@ require('lspconfig').phpactor.setup {
 require('lspconfig').tsserver.setup {
   capabilities = capabilities
 }
+
+require('lspconfig').yamlls.setup {
+  capabilities = capabilities
+}
