@@ -1,8 +1,12 @@
 # Full configuration for neovim
 
+This configuration is optimized for a PHP environment.  
+Javascript, Yaml, Twig, Json, Behat, CS are also needed.
+
 ## Prerequisites
 - [ripgrep](https://github.com/BurntSushi/ripgrep): for telescope search
 - [nerdfonts](https://www.nerdfonts.com/): specificaly Hack Nerd Font
+- Node (with NPM) for tsserver and others LSP
 - PHP and Composer for phpactor
 - [phpactor](https://github.com/phpactor/phpactor) for the nvim plugin
 
