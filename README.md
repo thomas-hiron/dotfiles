@@ -16,7 +16,9 @@ Then simply run `:PlugInstall`.
 
 ## Installed plugins
 - [vim-plug](https://github.com/junegunn/vim-plug)
-- [telescope](https://github.com/nvim-telescope/telescope.nvim): with telescope-fzf-native
+- [telescope](https://github.com/nvim-telescope/telescope.nvim)
+  - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search
+  - [telescope-live-grep-args](https://github.com/nvim-telescope/telescope-live-grep-args.nvim): usage of rg args
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [lspconfig](https://phpactor.readthedocs.io/en/master/lsp/vim.html): PHP LSP
