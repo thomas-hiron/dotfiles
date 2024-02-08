@@ -28,6 +28,10 @@ nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 
+nnoremap œ :bprevious<cr>
+nnoremap æ :bprevious<cr>
+nnoremap â :bdelete<cr>
+
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
 	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
