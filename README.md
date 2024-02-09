@@ -16,7 +16,7 @@ Then simply run `:PlugInstall`.
 
 ## Installed plugins
 - [gruvbox](https://github.com/ellisonleao/gruvbox.nvim): pastel theme
-- [lspconfig](https://github.com/neovim/nvim-lspconfig): PHP LSP
+- [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line

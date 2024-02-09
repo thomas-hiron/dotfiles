@@ -45,28 +45,28 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Global plugins
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'andymass/vim-matchup'
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'nvim-telescope/telescope-live-grep-args.nvim'
-Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-tree/nvim-tree.lua'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'RRethy/vim-illuminate'
-Plug 'andymass/vim-matchup'
 
 " Aucomplete plugins
+Plug 'hrsh7th/cmp-buffer' " Autocomplete with words in current buffer
 Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-path' " Autocomplete for system path
 Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
 
 " Snippets plugins
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-Plug 'rafamadriz/friendly-snippets'
+Plug 'rafamadriz/friendly-snippets' " Multi language code snippets
 
 " Theme plugins
 Plug 'ellisonleao/gruvbox.nvim'
