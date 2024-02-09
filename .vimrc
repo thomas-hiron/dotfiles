@@ -47,6 +47,7 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Global plugins
+Plug 'alvan/vim-php-manual'
 Plug 'andymass/vim-matchup'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
