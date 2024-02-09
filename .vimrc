@@ -73,7 +73,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'rafamadriz/friendly-snippets' " Multi language code snippets
 
 " Theme plugins
-Plug 'ellisonleao/gruvbox.nvim'
+Plug 'sainnhe/edge'
 
 " Mason
 Plug 'williamboman/mason-lspconfig.nvim'

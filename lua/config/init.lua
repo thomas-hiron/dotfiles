@@ -1,4 +1,4 @@
-require('config/gruvbox')
+require('config/edge')
 require('config/illuminate')
 require('config/lualine')
 require('config/mason')

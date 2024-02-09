@@ -15,7 +15,7 @@ Clone this project into `$XDG_CONFIG_HOME/nvim` and symlink `.vimrc` to home dir
 Then simply run `:PlugInstall`.
 
 ## Installed plugins
-- [gruvbox](https://github.com/ellisonleao/gruvbox.nvim): pastel theme
+- [edge](https://github.com/sainnhe/edge): color theme
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
