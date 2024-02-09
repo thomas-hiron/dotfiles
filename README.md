@@ -35,9 +35,11 @@ Then simply run `:PlugInstall`.
 4. Require it in `lua/config/init.lua`
 
 ## Installed tree-sitter parsers
+- html
 - javascript
 - make
 - php
+- twig
 - yaml
 
 Install parsers with this command:
