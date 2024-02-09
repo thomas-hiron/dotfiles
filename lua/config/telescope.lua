@@ -27,6 +27,9 @@ require('telescope').setup {
         i = {
           ["<C-k>"] = lga_actions.quote_prompt(),
           ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+          ["<C-n>"] = lga_actions.quote_prompt({ postfix = " --no-ignore " }),
+          ["<C-h>"] = lga_actions.quote_prompt({ postfix = " --hidden " }),
+          ["<C-t>"] = lga_actions.quote_prompt({ postfix = " -t" }),
         }
       }
     }

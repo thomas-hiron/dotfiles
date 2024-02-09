@@ -19,6 +19,8 @@ nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fr <cmd>Telescope registers<cr>
+vnoremap <leader>fv <cmd>lua require("telescope-live-grep-args.shortcuts").grep_visual_selection()<cr>
+nnoremap <leader>fw <cmd>lua require("telescope-live-grep-args.shortcuts").grep_word_under_cursor()<cr>
 nnoremap gd <cmd>Telescope lsp_definitions<cr>
 nnoremap gr <cmd>Telescope lsp_references<cr>
 nnoremap gi <cmd>Telescope lsp_implementations<cr>
