@@ -19,6 +19,7 @@ Then simply run `:PlugInstall`.
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): PHP LSP
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
+- [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
   - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search
   - [telescope-live-grep-args](https://github.com/nvim-telescope/telescope-live-grep-args.nvim): usage of rg args

@@ -1,5 +1,6 @@
 require('config/gruvbox')
 require('config/illuminate')
+require('config/lualine')
 require('config/mason')
 require('config/nvim-cmp')
 require('config/telescope')
