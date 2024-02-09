@@ -1,10 +1,14 @@
 local cmp = require('cmp')
+local lspkind = require('lspkind')
 
 cmp.setup({
   snippet = {
     expand = function(args)
       vim.fn["vsnip#anonymous"](args.body)
     end,
+  },
+  formatting = {
+    format = lspkind.cmp_format(),
   },
   window = {
     completion = cmp.config.window.bordered(),

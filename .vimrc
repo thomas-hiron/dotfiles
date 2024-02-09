@@ -62,6 +62,7 @@ Plug 'hrsh7th/cmp-buffer' " Autocomplete with words in current buffer
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-path' " Autocomplete for system path
 Plug 'hrsh7th/nvim-cmp'
+Plug 'onsails/lspkind.nvim' " Additional contextual menu info
 
 " Snippets plugins
 Plug 'hrsh7th/cmp-vsnip'
@@ -72,8 +73,8 @@ Plug 'rafamadriz/friendly-snippets' " Multi language code snippets
 Plug 'ellisonleao/gruvbox.nvim'
 
 " Mason
-Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'williamboman/mason.nvim'
 
 call plug#end()
 
