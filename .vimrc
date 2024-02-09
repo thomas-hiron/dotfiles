@@ -19,6 +19,10 @@ nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fr <cmd>Telescope registers<cr>
+nnoremap gd <cmd>Telescope lsp_definitions<cr>
+nnoremap gr <cmd>Telescope lsp_references<cr>
+nnoremap gi <cmd>Telescope lsp_implementations<cr>
+nnoremap gs <cmd>Telescope lsp_document_symbols<cr>
 
 " Tree maping
 nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
