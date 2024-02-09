@@ -49,7 +49,8 @@ Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'neovim/nvim-lspconfig'
-Plug 'nelsyeung/twig.vim'
+Plug 'RRethy/vim-illuminate'
+Plug 'andymass/vim-matchup'
 
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-nvim-lsp'

@@ -15,16 +15,18 @@ Clone this project into `$XDG_CONFIG_HOME/nvim` and symlink `.vimrc` to home dir
 Then simply run `:PlugInstall`.
 
 ## Installed plugins
-- [vim-plug](https://github.com/junegunn/vim-plug)
+- [gruvbox](https://github.com/ellisonleao/gruvbox.nvim): pastel theme
+- [lspconfig](https://github.com/neovim/nvim-lspconfig): PHP LSP
+- [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
   - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search
   - [telescope-live-grep-args](https://github.com/nvim-telescope/telescope-live-grep-args.nvim): usage of rg args
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [lspconfig](https://phpactor.readthedocs.io/en/master/lsp/vim.html): PHP LSP
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
-- [gruvbox](https://github.com/ellisonleao/gruvbox.nvim): pastel theme
-- [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
+- [vim-matchup](https://github.com/andymass/vim-matchup): syntax matching plugin
+- [vim-plug](https://github.com/junegunn/vim-plug)
 
 ## Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.
