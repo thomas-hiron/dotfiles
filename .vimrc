@@ -60,10 +60,13 @@ Plug 'andymass/vim-matchup'
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
 
 " Snippets plugins
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'rafamadriz/friendly-snippets'
 
 " Theme plugins
 Plug 'ellisonleao/gruvbox.nvim'
