@@ -8,6 +8,19 @@ require('gitsigns').setup {
       vim.keymap.set(mode, l, r, opts)
     end
 
+    -- Navigation
+    map('n', '<leader>gw', function()
+      if vim.wo.diff then return '<leader>gw' end
+      vim.schedule(function() gs.prev_hunk() end)
+      return '<Ignore>'
+    end, {expr = true, desc = 'Go to previous hunk'})
+
+    map('n', '<leader>gx', function()
+      if vim.wo.diff then return '<leader>gx' end
+      vim.schedule(function() gs.next_hunk() end)
+      return '<Ignore>'
+    end, {expr=true, desc = 'Go to next hunk'})
+
     -- Actions
     map('n', '<leader>gs', gs.stage_hunk, {desc = 'Add this hunk to the staging area'})
     map('n', '<leader>gr', gs.reset_hunk, {desc = 'Remove this hunk'})
