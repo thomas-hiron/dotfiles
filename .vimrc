@@ -67,6 +67,7 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'RRethy/vim-illuminate'
+Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'windwp/nvim-autopairs'
 
 " Aucomplete plugins

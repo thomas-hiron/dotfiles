@@ -22,6 +22,7 @@ Then simply run `:PlugInstall`.
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line
+- [quickfix-reflector](https://github.com/stefandtw/quickfix-reflector.vim): edit quickfix list
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
   - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search
   - [telescope-live-grep-args](https://github.com/nvim-telescope/telescope-live-grep-args.nvim): usage of rg args
