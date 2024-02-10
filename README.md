@@ -29,6 +29,7 @@ Then simply run `:PlugInstall`.
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-matchup](https://github.com/andymass/vim-matchup): syntax matching plugin
 - [vim-plug](https://github.com/junegunn/vim-plug)
+- [which-key](https://github.com/folke/which-key.nvim)
 
 ## Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.

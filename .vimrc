@@ -54,6 +54,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Global plugins
 Plug 'alvan/vim-php-manual'
 Plug 'andymass/vim-matchup'
+Plug 'folke/which-key.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
