@@ -1,4 +1,5 @@
 require('config/edge')
+require('config/gitsigns')
 require('config/illuminate')
 require('config/lualine')
 require('config/mason')

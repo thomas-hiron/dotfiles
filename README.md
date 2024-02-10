@@ -16,6 +16,7 @@ Then simply run `:PlugInstall`.
 
 ## Installed plugins
 - [edge](https://github.com/sainnhe/edge): color theme
+- [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
