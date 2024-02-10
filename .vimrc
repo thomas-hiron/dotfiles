@@ -64,6 +64,7 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'RRethy/vim-illuminate'
+Plug 'windwp/nvim-autopairs'
 
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-buffer' " Autocomplete with words in current buffer

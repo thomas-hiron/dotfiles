@@ -18,6 +18,7 @@ Then simply run `:PlugInstall`.
 - [edge](https://github.com/sainnhe/edge): color theme
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
