@@ -17,7 +17,7 @@ let mapleader = ","
 set exrc
 set secure
 
-" Telescope maping
+" Telescope mapping
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
@@ -30,6 +30,11 @@ nnoremap gd <cmd>Telescope lsp_definitions<cr>
 nnoremap gr <cmd>Telescope lsp_references<cr>
 nnoremap gi <cmd>Telescope lsp_implementations<cr>
 nnoremap gs <cmd>Telescope lsp_document_symbols<cr>
+
+" LSP mapping
+nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
+nnoremap <leader>rr <cmd>lua vim.lsp.buf.rename()<cr>
+nnoremap <leader>ra <cmd>lua vim.lsp.buf.code_action()<cr>
 
 " Tree maping
 nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
