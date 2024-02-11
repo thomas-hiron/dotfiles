@@ -73,11 +73,12 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'RRethy/vim-illuminate'
 Plug 'stefandtw/quickfix-reflector.vim'
+Plug 'stevearc/dressing.nvim'
 Plug 'windwp/nvim-autopairs'
 
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-buffer' " Autocomplete with words in current buffer
-Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lsp' " LSP integration
 Plug 'hrsh7th/cmp-path' " Autocomplete for system path
 Plug 'hrsh7th/nvim-cmp'
 Plug 'onsails/lspkind.nvim' " Additional contextual menu info
