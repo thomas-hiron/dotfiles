@@ -12,6 +12,7 @@ filetype on
 filetype indent on
 set mouse=a
 let mapleader = ","
+let g:better_whitespace_enabled=0 " Disable trailing whitespaces highlight, works with ntpeters/vim-better-whitespace
 
 " Allow project specific .vimrc
 set exrc
@@ -50,8 +51,8 @@ nnoremap â :bdelete<cr>
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
-	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.config/nvim/plugged')
@@ -65,6 +66,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
@@ -98,5 +100,5 @@ Plug 'williamboman/mason.nvim'
 call plug#end()
 
 if has('nvim')
-	lua require('config')
+  lua require('config')
 endif

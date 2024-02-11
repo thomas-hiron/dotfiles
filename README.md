@@ -30,6 +30,7 @@ Then simply run `:PlugInstall`.
 - [toggleterm](https://github.com/akinsho/toggleterm.nvim): terminal
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace): trim trailings whitespaces on save
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-matchup](https://github.com/andymass/vim-matchup): syntax matching plugin
 - [vim-plug](https://github.com/junegunn/vim-plug)
