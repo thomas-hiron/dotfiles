@@ -10,6 +10,7 @@ set nrformats-=octal
 set formatoptions-=t " do not automaticcaly wrap text when typing
 filetype on
 filetype indent on
+set tabstop=4 shiftwidth=4 expandtab shiftround " Indentation configuration
 set mouse=a
 let mapleader = ","
 let g:better_whitespace_enabled=0 " Disable trailing whitespaces highlight, works with ntpeters/vim-better-whitespace
