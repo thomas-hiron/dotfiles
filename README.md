@@ -78,3 +78,9 @@ phpactor status
 
 ### LSP
 `:LspInfo` gives great infos about errors of LSP not correctly setup
+
+### Telescope FZF
+If fzf fails to install, go to the plugin dir `$XDG_CONFIG_HOME/nvim/plugged/telescope-fzf-native.nvim` and run make: 
+```bash
+make
+```
