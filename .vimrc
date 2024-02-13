@@ -38,6 +38,7 @@ nnoremap gs <cmd>Telescope lsp_document_symbols<cr>
 nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
 nnoremap <leader>rr <cmd>lua vim.lsp.buf.rename()<cr>
 nnoremap <leader>ra <cmd>lua vim.lsp.buf.code_action()<cr>
+vnoremap <leader>ra <cmd>lua vim.lsp.buf.code_action()<cr>
 
 " Tree maping
 nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
