@@ -1,6 +1,7 @@
 {
     "$schema": "/phpactor.schema.json",
     "behat.enabled": false,
+    "code_transform.refactor.generate_mutator.fluent": true,
     "language_server_php_cs_fixer.enabled": false,
     "language_server_phpstan.enabled": false,
     "language_server_worse_reflection.diagnostics.enable": false,
