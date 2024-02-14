@@ -19,6 +19,8 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab shiftround autoindent " Inden
 autocmd FileType lua setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 autocmd FileType yaml setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
+set signcolumn=yes " Always show the sign column
+
 " Allow project specific .vimrc
 set exrc
 set secure
