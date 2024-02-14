@@ -15,7 +15,7 @@ let mapleader = ","
 let g:better_whitespace_enabled=0 " Disable trailing whitespaces highlight, works with ntpeters/vim-better-whitespace
 
 " Indent
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab shiftround " Indentation configuration
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab shiftround autoindent " Indentation configuration
 autocmd FileType lua setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 autocmd FileType yaml setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
