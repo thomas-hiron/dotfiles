@@ -1,8 +1,8 @@
 set hidden
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+nnoremap <Up> :resize -10<cr>
+nnoremap <Down> :resize +10<cr>
+nnoremap <Left> :vertical resize -10<cr>
+nnoremap <Right> :vertical resize +10<cr>
 set nocompatible
 set scrolloff=3
 set number relativenumber
