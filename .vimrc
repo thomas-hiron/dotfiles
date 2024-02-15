@@ -112,6 +112,9 @@ Plug 'williamboman/mason.nvim'
 
 call plug#end()
 
+" Force filetype as twig for this extension
+autocmd BufNewFile,BufRead *.html.twig set filetype=twig
+
 if has('nvim')
   lua require('config')
 endif
