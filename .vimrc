@@ -58,6 +58,9 @@ nnoremap œ :bprevious<cr>
 nnoremap æ :bprevious<cr>
 nnoremap â :bdelete<cr>
 
+" Force filetype as twig 
+nnoremap <leader>w <cmd>set filetype=twig<cr>
+
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -111,9 +114,6 @@ Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'williamboman/mason.nvim'
 
 call plug#end()
-
-" Force filetype as twig for this extension
-autocmd BufNewFile,BufRead *.html.twig set filetype=twig
 
 if has('nvim')
   lua require('config')
