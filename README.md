@@ -34,6 +34,7 @@ Then simply run `:PlugInstall`.
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-matchup](https://github.com/andymass/vim-matchup): syntax matching plugin
 - [vim-plug](https://github.com/junegunn/vim-plug)
+- [vim-polyglot](https://github.com/sheerun/vim-polyglot): language pack plugin
 - [which-key](https://github.com/folke/which-key.nvim)
 
 ## Installing a new plugin
