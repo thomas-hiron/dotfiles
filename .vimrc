@@ -119,4 +119,5 @@ call plug#end()
 
 if has('nvim')
   lua require('config')
+  lua require('functions')
 endif
