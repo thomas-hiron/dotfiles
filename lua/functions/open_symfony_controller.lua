@@ -13,7 +13,7 @@ _G.openSymfonyController = function(word)
       -- Extract controller value
       local controller = string.match(line, "'_controller'%s*=>%s*'([^']+)'")
       -- Transform controller FQCN to path
-      local filepath = string.gsub(controller, 'App', 'src'):gsub('\\\\', '/'):gsub('::.+', '') .. '.php'
+      local filepath = string.gsub(controller, '^App', 'src'):gsub('\\\\', '/'):gsub('::.+', '') .. '.php'
       -- Get action name
       local action = string.match(controller, "::(.+)")
 
