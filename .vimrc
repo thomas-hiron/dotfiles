@@ -55,8 +55,10 @@ nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
 nnoremap J mzJ`z
 
 nnoremap œ :bprevious<cr>
-nnoremap æ :bprevious<cr>
+nnoremap æ :bnext<cr>
 nnoremap â :bdelete<cr>
+nnoremap ç :cprev<cr>
+nnoremap å :cnext<cr>
 
 " Force filetype as twig 
 nnoremap <leader>w <cmd>set filetype=twig<cr>
