@@ -65,6 +65,9 @@ nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
 nnoremap ± :w<cr>
 
+" autocmd
+autocmd BufReadPost * call luaeval("restoreCursorPosition()")
+
 " Force filetype as twig 
 nnoremap <leader>w <cmd>set filetype=twig<cr>
 
