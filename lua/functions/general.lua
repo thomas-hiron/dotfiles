@@ -4,6 +4,15 @@ local function restore_cursor_position()
   end
 end
 
+local function delete_trailing_space()
+  vim.cmd([[
+    normal mz
+    %s/\v\s+$//ge
+    normal `z
+  ]])
+end
+
 return {
   restore_cursor_position = restore_cursor_position,
+  delete_trailing_space = delete_trailing_space,
 }

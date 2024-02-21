@@ -12,7 +12,6 @@ filetype on
 filetype indent on
 set mouse=a
 let mapleader = ","
-let g:better_whitespace_enabled=0 " Disable trailing whitespaces highlight, works with ntpeters/vim-better-whitespace
 
 " Indent
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab shiftround autoindent " Indentation configuration
@@ -71,6 +70,7 @@ nnoremap ± :w<cr>
 
 " autocmd
 autocmd BufReadPost * call general#RestoreCursorPosition()
+autocmd BufWrite *.php,*.js,*.twig,*.html,*.sh,*.yaml,*.yml,*.vim,*.lua,*.feature call general#DeleteTrailingSpace()
 
 " Force filetype as twig 
 nnoremap <leader>w <cmd>set filetype=twig<cr>
@@ -93,7 +93,6 @@ Plug 'mattn/emmet-vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'ntpeters/vim-better-whitespace'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
