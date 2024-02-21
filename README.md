@@ -17,6 +17,7 @@ Then simply run `:PlugInstall`.
 ## Installed plugins
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
 - [edge](https://github.com/sainnhe/edge): color theme
+- [emmet-vim](https://github.com/mattn/emmet-vim)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
@@ -31,6 +32,8 @@ Then simply run `:PlugInstall`.
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace): trim trailings whitespaces on save
+- [vim-expand-region](https://github.com/terryma/vim-expand-region): increasingly expand visual region
+- [vim-fugitive](https://github.com/tpope/vim-fugitive): mostly for git blame
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-matchup](https://github.com/andymass/vim-matchup): syntax matching plugin
 - [vim-plug](https://github.com/junegunn/vim-plug)

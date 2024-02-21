@@ -51,14 +51,19 @@ nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
 nnoremap <leader>tf <cmd>NvimTreeFindFile<cr>
 nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
 
-" Keep the cursor in place while joining lines
-nnoremap J mzJ`z
+nnoremap <leader>gb <cmd>:Git blame<cr>
+nnoremap <leader>gd <cmd>:Gvdiffsplit<cr>
+
+nnoremap J mzJ`z " Keep the cursor in place while joining lines
+map q: :q
 
 nnoremap œ :bprevious<cr>
 nnoremap æ :bnext<cr>
+nnoremap þ :bp\|bd #<cr>
 nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
+nnoremap ± :w<cr>
 
 " Force filetype as twig 
 nnoremap <leader>w <cmd>set filetype=twig<cr>
@@ -77,6 +82,7 @@ Plug 'alvan/vim-php-manual'
 Plug 'andymass/vim-matchup'
 Plug 'folke/which-key.nvim'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'mattn/emmet-vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -90,6 +96,8 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'RRethy/vim-illuminate'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'stevearc/dressing.nvim'
+Plug 'terryma/vim-expand-region'
+Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
 
 " Aucomplete plugins
