@@ -1,4 +1,5 @@
-_G.openSymfonyController = function(word)
+local function open_symfony_controller()
+  local word = vim.fn.expand('<cword>')
   local filepath = "./var/cache/dev/url_generating_routes.php"
   local handle = io.open(filepath, "r")
   if not handle then
@@ -30,3 +31,27 @@ _G.openSymfonyController = function(word)
 
   handle:close()
 end
+
+local function open_webpack_entrypoint()
+  -- Get whole line under cursor
+  local cursorLine = vim.api.nvim_get_current_line()
+
+  -- Get text inside quotes
+  local path = string.match(cursorLine, "'.+'"):gsub("'", '')
+
+  local fileType = string.match(path, '^css') and 'css' or 'js'
+
+  -- Remove file type
+  local realPath = string.gsub(path, '^'..fileType, '')
+
+  local extension = (fileType == 'css') and '.scss' or '.js'
+
+  -- Open the file
+  vim.cmd('edit assets/'..fileType..'/entrypoint/'..realPath..extension)
+end
+
+
+return {
+  open_symfony_controller = open_symfony_controller,
+  open_webpack_entrypoint = open_webpack_entrypoint,
+}

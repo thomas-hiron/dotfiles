@@ -54,6 +54,10 @@ nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
 nnoremap <leader>gb <cmd>:Git blame<cr>
 nnoremap <leader>gd <cmd>:Gvdiffsplit<cr>
 
+" Symfony
+nnoremap gc <cmd>call symfony#OpenSymfonyController()<cr>
+nnoremap ga <cmd>call symfony#OpenWebpackEntrypoint()<cr>
+
 nnoremap J mzJ`z " Keep the cursor in place while joining lines
 map q: :q
 
@@ -66,7 +70,7 @@ nnoremap å :cnext<cr>
 nnoremap ± :w<cr>
 
 " autocmd
-autocmd BufReadPost * call luaeval("restoreCursorPosition()")
+autocmd BufReadPost * call general#RestoreCursorPosition()
 
 " Force filetype as twig 
 nnoremap <leader>w <cmd>set filetype=twig<cr>
@@ -130,5 +134,4 @@ call plug#end()
 
 if has('nvim')
   lua require('config')
-  lua require('functions')
 endif
