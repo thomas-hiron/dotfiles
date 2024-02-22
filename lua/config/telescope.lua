@@ -25,6 +25,14 @@ require('telescope').setup {
     file_ignore_patterns = {
       ".git",
     },
+    mappings = {
+      n = {
+        ['þ'] = require('telescope.actions').delete_buffer
+      },
+      i = {
+        ['þ'] = require('telescope.actions').delete_buffer
+      }
+    },
     path_display = filename_first
   },
   pickers = {
