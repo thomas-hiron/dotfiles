@@ -8,7 +8,15 @@ cmp.setup({
     end,
   },
   formatting = {
-    format = lspkind.cmp_format(),
+    format = lspkind.cmp_format({
+      before = function (entry, vim_item)
+        if entry.source.name == 'symfony_routes' then
+          vim_item.kind = '🛣️ Route'
+        end
+
+        return vim_item
+      end
+    }),
   },
   window = {
     completion = cmp.config.window.bordered(),
@@ -27,6 +35,7 @@ cmp.setup({
   }, {
     { name = 'path' },
     { name = 'buffer' },
+    { name = 'symfony_routes' },
   })
 })
 
