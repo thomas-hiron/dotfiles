@@ -6,6 +6,7 @@ require'nvim-treesitter.configs'.setup {
     "javascript",
     "make",
     "php",
+    "ruby",
     "twig",
     "yaml",
   },
