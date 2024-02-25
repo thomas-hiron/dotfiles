@@ -17,7 +17,6 @@ Then simply run `:PlugInstall`.
 ## Installed plugins
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
 - [edge](https://github.com/sainnhe/edge): color theme
-- [emmet-vim](https://github.com/mattn/emmet-vim)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
