@@ -101,7 +101,6 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'RRethy/vim-illuminate'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'stevearc/dressing.nvim'
-Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
 
