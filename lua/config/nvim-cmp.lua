@@ -12,6 +12,8 @@ cmp.setup({
       before = function (entry, vim_item)
         if entry.source.name == 'symfony_routes' then
           vim_item.kind = '🛣️ Route'
+        elseif entry.source.name == 'twig' then
+          vim_item.kind = '🌾 Twig'
         end
 
         return vim_item
@@ -36,6 +38,7 @@ cmp.setup({
     { name = 'path' },
     { name = 'buffer' },
     { name = 'symfony_routes' },
+    { name = 'twig' },
   })
 })
 
