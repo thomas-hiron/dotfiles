@@ -9,6 +9,7 @@ Javascript, Yaml, Twig, Json, Behat, CS are also needed.
 - Node (with NPM) for tsserver and others LSP
 - PHP and Composer for phpactor
 - [phpactor](https://github.com/phpactor/phpactor) for the nvim plugin
+- python3.10-venv for Nginx LSP
 
 ## Installation
 Clone this project into `$XDG_CONFIG_HOME/nvim` and symlink `.vimrc` to home directory.  
@@ -64,6 +65,7 @@ Installing a LSP is made easy with mason-lspconfig, just run the following comma
 :MasonInstall docker-compose-language-service
 :MasonInstall emmet-language-server
 :MasonInstall lua-language-server
+:MasonInstall nginx-language-server
 :MasonInstall phpactor
 :MasonInstall tsserver
 ```

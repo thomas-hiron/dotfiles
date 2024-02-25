@@ -59,6 +59,10 @@ require('lspconfig').lua_ls.setup {
   capabilities = capabilities
 }
 
+require('lspconfig').nginx_language_server.setup {
+  capabilities = capabilities
+}
+
 require('lspconfig').phpactor.setup {
   capabilities = capabilities
 }
