@@ -60,6 +60,7 @@ Install parsers with this command:
 ## LSP
 Installing a LSP is made easy with mason-lspconfig, just run the following command to install a LSP:  
 ```vim
+:MasonInstall dockerfile-language-server
 :MasonInstall docker-compose-language-service
 :MasonInstall emmet-language-server
 :MasonInstall lua-language-server

@@ -46,6 +46,10 @@ require('lspconfig').docker_compose_language_service.setup {
   capabilities = capabilities
 }
 
+require('lspconfig').dockerls.setup {
+  capabilities = capabilities
+}
+
 require('lspconfig').emmet_language_server.setup {
   filetypes = { "css", "html", "sass", "scss", "twig" },
   capabilities = capabilities
