@@ -60,8 +60,9 @@ Install parsers with this command:
 ## LSP
 Installing a LSP is made easy with mason-lspconfig, just run the following command to install a LSP:  
 ```vim
+:LspInstall emmet-language-server
+:LspInstall lua-language-server
 :LspInstall phpactor
-:LspInstall yamlls
 :LspInstall tsserver
 ```
 
