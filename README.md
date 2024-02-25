@@ -60,10 +60,11 @@ Install parsers with this command:
 ## LSP
 Installing a LSP is made easy with mason-lspconfig, just run the following command to install a LSP:  
 ```vim
-:LspInstall emmet-language-server
-:LspInstall lua-language-server
-:LspInstall phpactor
-:LspInstall tsserver
+:MasonInstall docker-compose-language-service
+:MasonInstall emmet-language-server
+:MasonInstall lua-language-server
+:MasonInstall phpactor
+:MasonInstall tsserver
 ```
 
 The corresponding LSP are attached in `lua/config/nvim-cmp.lua`.

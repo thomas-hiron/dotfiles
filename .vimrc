@@ -71,6 +71,7 @@ nnoremap ± :w<cr>
 " autocmd
 autocmd BufReadPost * call general#RestoreCursorPosition()
 autocmd BufWrite *.php,*.js,*.twig,*.html,*.sh,*.yaml,*.yml,*.vim,*.lua,*.feature call general#DeleteTrailingSpace()
+autocmd BufNewFile,BufRead compose*.yaml :set filetype=yaml.docker-compose
 
 " Force filetype as twig 
 nnoremap <leader>w <cmd>set filetype=twig<cr>
