@@ -10,7 +10,9 @@ cmp.setup({
   formatting = {
     format = lspkind.cmp_format({
       before = function (entry, vim_item)
-        if entry.source.name == 'symfony_routes' then
+        if entry.source.name == 'html_class' then
+          vim_item.kind = '📌 Class'
+        elseif entry.source.name == 'symfony_routes' then
           vim_item.kind = '🛣️ Route'
         elseif entry.source.name == 'twig' then
           vim_item.kind = '🌾 Twig'
@@ -35,6 +37,7 @@ cmp.setup({
     { name = 'nvim_lsp' },
     { name = 'vsnip' },
   }, {
+    { name = 'html_class' },
     { name = 'path' },
     { name = 'buffer' },
     { name = 'symfony_routes' },
