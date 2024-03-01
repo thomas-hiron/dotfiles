@@ -1,0 +1,115 @@
+###############
+#  Shortcuts  #
+###############
+
+snippet d "dump to profiler"
+{% dump(${1}) %}
+endsnippet
+
+snippet dd "dump and print"
+{{ dump(${1}) }}
+endsnippet
+
+snippet % "basic block"
+{% ${1} %}
+endsnippet
+
+snippet # "comment"
+{# ${1} #}
+endsnippet
+
+# One missing due to autopair plugin
+snippet { "print"
+{{ ${1} }
+endsnippet
+
+snippet c "class"
+class="${1}"
+endsnippet
+
+snippet p "path" i
+{{ path('${1}') }}
+endsnippet
+
+############
+#  Blocks  #
+############
+
+snippet block "block"
+{% block ${1:content} %}
+    ${2}
+{% endblock %}
+endsnippet
+
+snippet blocki "block inline"
+{% block ${1:content} ${2} %}
+endsnippet
+
+snippet set "set"
+{% set ${1} = ${2} %}
+endsnippet
+
+snippet if "if block"
+{% if ${1} %}
+    ${2}
+{% endif %}
+endsnippet
+
+snippet ife "if else block"
+{% if ${1} %}
+    ${2}
+{% else %}
+    ${3}
+{% endif %}
+endsnippet
+
+snippet for "for block"
+{% for ${1} in $1s %}
+    ${2}
+{% endfor %}
+endsnippet
+
+snippet macro "macro block"
+{% macro ${1}(${2}) %}
+    ${3}
+{% endmacro %}
+endsnippet
+
+snippet inc "include block"
+{{ include('${1}', {${2}}, false) }}
+endsnippet
+
+snippet style "stylesheet block"
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('${1}') }}
+{% endblock %}
+endsnippet
+
+snippet javascript "javascript block"
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('${1}') }}
+{% endblock %}
+endsnippet
+
+snippet trans "translation filter" i
+trans({${2}}, '${1:translation_domain}')
+endsnippet
+
+##########
+#  Form  #
+##########
+
+snippet form "form block"
+{{ form(${1:form}) }}
+endsnippet
+
+snippet fs "form start"
+{{ form_start(${1:form}) }}
+{{ form_end($1) }}
+endsnippet
+
+snippet ft "form theme"
+{% form_theme ${1:form} '${2:forms/_form_material.html.twig}' %}
+endsnippet

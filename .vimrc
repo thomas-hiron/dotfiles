@@ -60,6 +60,11 @@ nnoremap ga <cmd>call symfony#OpenWebpackEntrypoint()<cr>
 nnoremap J mzJ`z " Keep the cursor in place while joining lines
 map q: :q
 
+" Snippets
+let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+
 nnoremap œ :bprevious<cr>
 nnoremap æ :bnext<cr>
 nnoremap þ :bp\|bd #<cr>
@@ -121,9 +126,8 @@ Plug 'thomas-hiron/cmp-symfony-routes'
 Plug 'thomas-hiron/cmp-twig'
 
 " Snippets plugins
-Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-Plug 'rafamadriz/friendly-snippets' " Multi language code snippets
+Plug 'SirVer/ultisnips'
 
 " Indent plugins (don't sort, vim-polyglot must be loaded first)
 Plug 'sheerun/vim-polyglot'

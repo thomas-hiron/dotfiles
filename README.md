@@ -31,6 +31,7 @@ Then simply run `:PlugInstall`.
 - [toggleterm](https://github.com/akinsho/toggleterm.nvim): terminal
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [ulti-snips](https://github.com/SirVer/ultisnips/): snippets integration
 - [vim-abolish](https://github.com/tpope/vim-abolish): better substitution and coercion
 - [vim-fugitive](https://github.com/tpope/vim-fugitive): mostly for git blame
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
