@@ -1,0 +1,63 @@
+snippet if "if"
+if (${1}) {
+	$2
+}
+endsnippet
+
+snippet ife "if else"
+if (${1}) {
+    ${2}
+} else {
+    ${3}
+}
+endsnippet
+
+snippet else "else"
+else {
+	$1
+}
+endsnippet
+
+snippet for "for"
+for ($${2:i} = 0; $$2 < ${1:count}; ++$$2) {
+	$3
+}
+endsnippet
+
+snippet fore "Foreach loop"
+foreach ($${1:variable} as $${2:value}) {
+    $3
+}
+endsnippet
+
+snippet forek "foreachk"
+foreach ($${1:variable} as $${2:key} => $${3:value}) {
+	${4}
+}
+endsnippet
+
+snippet try "try/catch"
+try {
+    $1
+} catch (${2:Exception} $e) {
+    $3
+}
+endsnippet
+
+snippet catch "catch"
+catch (${1} $e) {
+    $2
+}
+endsnippet
+
+snippet ? "ternary"
+$1 ? $2 : $3
+endsnippet
+
+snippet fn "closure"
+fn (${1}) => ${2}
+endsnippet
+
+snippet fnu "closure"
+fn (${1}) use (${2}) => ${3}
+endsnippet

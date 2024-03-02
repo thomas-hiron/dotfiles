@@ -1,0 +1,20 @@
+snippet class "Class PHP"
+<?php
+
+class ${1:`!p snip.rv = snip.basename`}
+{
+    ${2}
+}
+endsnippet
+
+snippet classc "Class PHP with constructor"
+<?php
+
+class ${1:`!p snip.rv = snip.basename`}
+{
+    public function __construct(
+        ${2}
+    ) {
+    }
+}
+endsnippet

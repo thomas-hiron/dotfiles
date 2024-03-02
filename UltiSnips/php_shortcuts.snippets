@@ -1,0 +1,45 @@
+snippet t "this"
+$this->${1};
+endsnippet
+
+snippet / "Comment"
+/* ${1} */
+endsnippet
+
+snippet // "Multiline comment"
+/**
+ * ${1}
+ */
+endsnippet
+
+snippet new "New class instance"
+$${1} = new ${1/\w+\s*/\u$0/}($2);
+endsnippet
+
+snippet d "dump"
+dump(${1});
+endsnippet
+
+snippet d "dump"
+dump(${1});
+endsnippet
+
+snippet vd "var_dump"
+var_dump(${1});
+endsnippet
+
+snippet rt "return true"
+return true;
+endsnippet
+
+snippet rf "return false"
+return false;
+endsnippet
+
+snippet rn "return null"
+return null;
+endsnippet
+
+snippet v "MyVar $myVar" i
+${1/\w+\s*/\u$0/} ${1}${2}
+endsnippet

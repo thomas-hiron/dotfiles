@@ -1,0 +1,79 @@
+snippet set "Getter and fluent setter"
+public function get${1/\w+\s*/\u$0/}(): $2
+{
+    return $this->$1;
+}
+
+public function set${1/\w+\s*/\u$0/}($2 $$1): self
+{
+    $this->$1 = $$1;
+
+    return $this;
+}
+endsnippet
+
+snippet iset "Isset and fluent setter"
+public function is${1/\w+\s*/\u$0/}(): $2
+{
+    return $this->$1;
+}
+
+public function set${1/\w+\s*/\u$0/}($2 $$1): self
+{
+    $this->$1 = $$1;
+
+    return $this;
+}
+endsnippet
+
+snippet cset "Getter and fluent setter for a collection"
+/**
+ * @return ${1/\w+\s*/\u$0/}[]|Collection
+ */
+public function get${1/\w+\s*/\u$0/}s(): iterable
+{
+    return $this->$1s;
+}
+
+public function add${1/\w+\s*/\u$0/}(${1/\w+\s*/\u$0/} $$1): self
+{
+    if (!$this->$1s->contains($$1)) {
+        $this->$1s->add($$1);
+        $$1->set${2}($this);
+    }
+
+    return $this;
+}
+
+public function remove${1/\w+\s*/\u$0/}(${1/\w+\s*/\u$0/} $$1): self
+{
+    $this->$1s->removeElement($$1);
+
+    return $this;
+}
+endsnippet
+
+snippet aset "Getter and fluent setter for an array"
+public function get${1/\w+\s*/\u$0/}s(): array
+{
+    return $this->$1s;
+}
+
+public function add${1/\w+\s*/\u$0/}(${2} $$1): self
+{
+    if (!\in_array($$1, $this->$$1s)) {
+        $this->$$1s[] = $$1;
+    }
+
+    return $this;
+}
+
+public function remove${1/\w+\s*/\u$0/}($2 $$1): self
+{
+    if (false !== $index = \array_search($$1, $this->$$1s, true)) {
+        unset($this->$$1s[$index]);
+    }
+
+    return $this;
+}
+endsnippet
