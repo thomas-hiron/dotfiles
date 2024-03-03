@@ -59,6 +59,7 @@ nnoremap ga <cmd>call symfony#OpenWebpackEntrypoint()<cr>
 
 nnoremap J mzJ`z " Keep the cursor in place while joining lines
 map q: :q
+nnoremap <leader>w :ArgWrap<cr>
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<C-j>"
@@ -84,7 +85,6 @@ else
 end
 
 " Force filetype as twig 
-nnoremap <leader>w <cmd>set filetype=twig<cr>
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -116,6 +116,7 @@ Plug 'stevearc/dressing.nvim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
+Plug 'https://git.foosoft.net/alex/vim-argwrap.git'
 
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-buffer' " Autocomplete with words in current buffer
