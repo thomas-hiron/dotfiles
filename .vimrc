@@ -79,12 +79,7 @@ nnoremap ± :w<cr>
 if has('nvim')
   autocmd BufReadPost * call general#RestoreCursorPosition()
   autocmd BufWrite *.php,*.js,*.twig,*.html,*.sh,*.yaml,*.yml,*.vim,*.lua,*.feature call general#DeleteTrailingSpace()
-  autocmd BufNewFile,BufRead compose*.yaml :set filetype=yaml.docker-compose
-else
-  autocmd FileType * IlluminationDisable
 end
-
-" Force filetype as twig 
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
