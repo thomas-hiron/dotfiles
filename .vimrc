@@ -92,7 +92,6 @@ call plug#begin('~/.config/nvim/plugged')
 " Global plugins
 Plug 'akinsho/toggleterm.nvim'
 Plug 'alvan/vim-php-manual'
-Plug 'andymass/vim-matchup'
 Plug 'folke/which-key.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'neovim/nvim-lspconfig'

@@ -37,7 +37,6 @@ Then simply run `:PlugInstall`.
 - [vim-abolish](https://github.com/tpope/vim-abolish): better substitution and coercion
 - [vim-fugitive](https://github.com/tpope/vim-fugitive): mostly for git blame
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
-- [vim-matchup](https://github.com/andymass/vim-matchup): syntax matching plugin
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): language pack plugin
 - [which-key](https://github.com/folke/which-key.nvim)
