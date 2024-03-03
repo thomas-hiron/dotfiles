@@ -1,3 +1,4 @@
+require('config/barbar')
 require('config/edge')
 require('config/gitsigns')
 require('config/illuminate')

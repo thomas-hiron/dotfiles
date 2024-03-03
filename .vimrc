@@ -65,9 +65,10 @@ let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
-nnoremap œ :bprevious<cr>
-nnoremap æ :bnext<cr>
-nnoremap þ :bp\|bd #<cr>
+nnoremap œ <cmd>BufferPrevious<cr>
+nnoremap æ <cmd>BufferNext<cr>
+nnoremap <leader>bc <cmd>BufferClose<cr>
+nnoremap <leader>br <cmd>BufferRestore<cr>
 nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
@@ -108,6 +109,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'romgrk/barbar.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'stevearc/dressing.nvim'

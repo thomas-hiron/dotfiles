@@ -1,17 +1,11 @@
 require ('lualine').setup {
   sections = {
-    lualine_a = {
+    lualine_c = {
       {
-        'buffers',
-        show_modified_status = false,
-        max_length = vim.o.columns * 9 / 10,
+        'filename',
+        path = 1,
       }
     },
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {'encoding', 'fileformat', 'filetype'},
-    lualine_z = {},
   },
 }
 

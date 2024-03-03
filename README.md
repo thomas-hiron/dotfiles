@@ -16,6 +16,7 @@ Clone this project into `$XDG_CONFIG_HOME/nvim` and symlink `.vimrc` to home dir
 Then simply run `:PlugInstall`.
 
 ## Installed plugins
+- [barbar](https://github.com/romgrk/barbar.nvim): buffer as tabs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
 - [edge](https://github.com/sainnhe/edge): color theme
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
