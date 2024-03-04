@@ -1,2 +1,7 @@
-require('which-key').setup()
+require('which-key').setup {
+  plugins = {
+    marks = false,
+    registers = false,
+  }
+}
 
