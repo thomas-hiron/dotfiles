@@ -8,7 +8,6 @@ set scrolloff=3
 set number relativenumber
 set nrformats-=octal
 set formatoptions-=t " do not automaticcaly wrap text when typing
-set nolinebreak
 filetype on
 filetype indent on
 set mouse=a
