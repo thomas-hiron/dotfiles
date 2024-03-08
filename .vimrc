@@ -7,7 +7,8 @@ set nocompatible
 set scrolloff=3
 set number relativenumber
 set nrformats-=octal
-set formatoptions-=t " do not automaticcaly wrap text when typing
+set formatoptions-=t " do not automatically wrap text when typing
+set textwidth=0 " do not automatically wrap text when typing
 filetype on
 filetype indent on
 set mouse=a
