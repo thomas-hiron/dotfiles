@@ -19,6 +19,7 @@ Then simply run `:PlugInstall`.
 - [argwrap](https://git.foosoft.net/alex/vim-argwrap.git): wrap/unwrap arguments
 - [barbar](https://github.com/romgrk/barbar.nvim): buffer as tabs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
+- [easy-motion](https://github.com/easymotion/vim-easymotion): move rapidly into current buffer
 - [edge](https://github.com/sainnhe/edge): color theme
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations

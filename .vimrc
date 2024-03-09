@@ -25,6 +25,10 @@ set signcolumn=yes " Always show the sign column
 set exrc
 set secure
 
+" Easymotion
+let g:EasyMotion_do_mapping = 0
+nnoremap <leader>m <Plug>(easymotion-bd-w)
+
 " Telescope mapping
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fa <cmd>Telescope find_files no_ignore=true<cr>
@@ -94,6 +98,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Global plugins
 Plug 'akinsho/toggleterm.nvim'
 Plug 'alvan/vim-php-manual'
+Plug 'easymotion/vim-easymotion'
 Plug 'folke/which-key.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'neovim/nvim-lspconfig'
