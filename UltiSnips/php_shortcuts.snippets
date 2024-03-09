@@ -1,4 +1,4 @@
-snippet t "this" i
+snippet $ "this" i
 $this->${1};
 endsnippet
 
@@ -42,4 +42,8 @@ endsnippet
 
 snippet v "MyVar $myVar" i
 ${1/\w+\s*/\u$0/} $${1}${2}
+endsnippet
+
+snippet assert "import Assert"
+use Symfony\Component\Validator\Constraints as Assert;
 endsnippet
