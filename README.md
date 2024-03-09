@@ -34,7 +34,7 @@ Then simply run `:PlugInstall`.
   - [telescope-live-grep-args](https://github.com/nvim-telescope/telescope-live-grep-args.nvim): usage of rg args
 - [toggleterm](https://github.com/akinsho/toggleterm.nvim): terminal
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter): with text objects plugin
 - [ulti-snips](https://github.com/SirVer/ultisnips/): snippets integration
 - [vim-abolish](https://github.com/tpope/vim-abolish): better substitution and coercion
 - [vim-fugitive](https://github.com/tpope/vim-fugitive): mostly for git blame

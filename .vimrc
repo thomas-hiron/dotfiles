@@ -129,6 +129,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'romgrk/barbar.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'stefandtw/quickfix-reflector.vim'
