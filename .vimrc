@@ -76,6 +76,16 @@ nnoremap œ <cmd>BufferPrevious<cr>
 nnoremap æ <cmd>BufferNext<cr>
 nnoremap <leader>bc <cmd>BufferClose<cr>
 nnoremap <leader>br <cmd>BufferRestore<cr>
+nnoremap <leader>b1 <cmd>BufferGoto 1<cr>
+nnoremap <leader>b2 <cmd>BufferGoto 2<cr>
+nnoremap <leader>b3 <cmd>BufferGoto 3<cr>
+nnoremap <leader>b4 <cmd>BufferGoto 4<cr>
+nnoremap <leader>b5 <cmd>BufferGoto 5<cr>
+nnoremap <leader>b6 <cmd>BufferGoto 6<cr>
+nnoremap <leader>b7 <cmd>BufferGoto 7<cr>
+nnoremap <leader>b8 <cmd>BufferGoto 8<cr>
+nnoremap <leader>b9 <cmd>BufferGoto 9<cr>
+
 nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
