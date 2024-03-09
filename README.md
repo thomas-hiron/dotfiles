@@ -22,6 +22,7 @@ Then simply run `:PlugInstall`.
 - [easy-motion](https://github.com/easymotion/vim-easymotion): move rapidly into current buffer
 - [edge](https://github.com/sainnhe/edge): color theme
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
+- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim): shows indentation guides
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)

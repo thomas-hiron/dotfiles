@@ -21,6 +21,14 @@ autocmd FileType yaml setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 set signcolumn=yes " Always show the sign column
 
+" List chars displayed as guides
+set list
+set listchars=
+set listchars+=tab:<->
+set listchars+=eol:¬
+set listchars+=trail:⋅
+set listchars+=lead:⋅
+
 " Allow project specific .vimrc
 set exrc
 set secure
@@ -111,6 +119,7 @@ Plug 'alvan/vim-php-manual'
 Plug 'easymotion/vim-easymotion'
 Plug 'folke/which-key.nvim'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
