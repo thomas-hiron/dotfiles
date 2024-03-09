@@ -18,8 +18,19 @@ local function filename_first(_, path)
   return string.format("%s\t\t%s", tail, parent)
 end
 
--- You dont need to set any of these options. These are the default ones. Only
--- the loading is important
+-- Temp workaround to append a live grep arg: see https://github.com/nvim-telescope/telescope-live-grep-args.nvim/pull/59
+local function append_prompt(opts)
+  local action_state = require("telescope.actions.state")
+
+  return function(prompt_bufnr)
+    local picker = action_state.get_current_picker(prompt_bufnr)
+    local prompt = picker:_get_prompt()
+
+    prompt = vim.trim(prompt)
+    picker:set_prompt(prompt .. opts.postfix)
+  end
+end
+
 require('telescope').setup {
   defaults = {
     file_ignore_patterns = {
@@ -53,10 +64,10 @@ require('telescope').setup {
       mappings = {
         i = {
           ["<C-k>"] = lga_actions.quote_prompt(),
-          ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
-          ["<C-n>"] = lga_actions.quote_prompt({ postfix = " --no-ignore " }),
-          ["<C-h>"] = lga_actions.quote_prompt({ postfix = " --hidden " }),
-          ["<C-t>"] = lga_actions.quote_prompt({ postfix = " -t" }),
+          ["<C-i>"] = append_prompt({ postfix = " --iglob " }),
+          ["<C-n>"] = append_prompt({ postfix = " --no-ignore " }),
+          ["<C-h>"] = append_prompt({ postfix = " --hidden " }),
+          ["<C-t>"] = append_prompt({ postfix = " -t" }),
         }
       }
     }
