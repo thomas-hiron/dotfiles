@@ -145,6 +145,7 @@ Plug 'hrsh7th/cmp-nvim-lsp' " LSP integration
 Plug 'hrsh7th/cmp-path' " Autocomplete for system path
 Plug 'hrsh7th/nvim-cmp'
 Plug 'onsails/lspkind.nvim' " Additional contextual menu info
+Plug 'SergioRibera/cmp-dotenv'
 Plug 'thomas-hiron/cmp-html-class'
 Plug 'thomas-hiron/cmp-symfony-routes'
 Plug 'thomas-hiron/cmp-twig'

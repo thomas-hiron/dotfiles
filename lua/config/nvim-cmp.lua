@@ -10,7 +10,9 @@ cmp.setup({
   formatting = {
     format = lspkind.cmp_format({
       before = function (entry, vim_item)
-        if entry.source.name == 'html_class' then
+        if entry.source.name == 'dotenv' then
+          vim_item.kind = '󰀫 Env'
+        elseif entry.source.name == 'html_class' then
           vim_item.kind = '📌 Class'
         elseif entry.source.name == 'symfony_routes' then
           vim_item.kind = '🛣️ Route'
@@ -36,12 +38,19 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
   }, {
-    { name = 'html_class' },
-    { name = 'path' },
-    { name = 'buffer' },
-    { name = 'symfony_routes' },
-    { name = 'twig' },
-  })
+      {
+        name = 'dotenv',
+        option = {
+          load_shell = false,
+          show_documentation = false,
+        }
+      },
+      { name = 'html_class' },
+      { name = 'path' },
+      { name = 'buffer' },
+      { name = 'symfony_routes' },
+      { name = 'twig' },
+    })
 })
 
 -- Set up lspconfig.
