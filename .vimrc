@@ -70,8 +70,6 @@ nnoremap <leader>gd <cmd>:Gvdiffsplit<cr>
 
 " Symfony
 nnoremap <leader>s <cmd>:SymfonyGoto<cr>
-nnoremap gc <cmd>call symfony#OpenSymfonyController()<cr>
-nnoremap ga <cmd>call symfony#OpenWebpackEntrypoint()<cr>
 
 nnoremap J mzJ`z " Keep the cursor in place while joining lines
 map q: :q
