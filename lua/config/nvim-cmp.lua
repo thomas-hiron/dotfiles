@@ -70,7 +70,14 @@ require('lspconfig').emmet_language_server.setup {
 }
 
 require('lspconfig').lua_ls.setup {
-  capabilities = capabilities
+  capabilities = capabilities,
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = {'vim'}
+      }
+    }
+  }
 }
 
 require('lspconfig').nginx_language_server.setup {
