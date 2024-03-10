@@ -35,7 +35,8 @@ set secure
 
 " Easymotion
 let g:EasyMotion_do_mapping = 0
-nnoremap <leader>m <Plug>(easymotion-bd-w)
+nnoremap <leader>j <Plug>(easymotion-w)
+nnoremap <leader>k <Plug>(easymotion-b)
 
 " Telescope mapping
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
