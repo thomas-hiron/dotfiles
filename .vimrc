@@ -69,6 +69,7 @@ nnoremap <leader>gb <cmd>:Git blame<cr>
 nnoremap <leader>gd <cmd>:Gvdiffsplit<cr>
 
 " Symfony
+nnoremap <leader>s <cmd>:SymfonyGoto<cr>
 nnoremap gc <cmd>call symfony#OpenSymfonyController()<cr>
 nnoremap ga <cmd>call symfony#OpenWebpackEntrypoint()<cr>
 
@@ -135,6 +136,7 @@ Plug 'romgrk/barbar.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'stevearc/dressing.nvim'
+Plug 'thomas-hiron/symfony-goto.nvim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
