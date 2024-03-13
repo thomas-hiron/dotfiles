@@ -41,6 +41,7 @@ nnoremap <leader>k <Plug>(easymotion-b)
 " Telescope mapping
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fa <cmd>Telescope find_files no_ignore=true<cr>
+nnoremap <expr> <leader>fd ':Telescope find_files<cr>' . "'" . expand('<cword>')
 nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
