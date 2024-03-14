@@ -64,6 +64,7 @@ require('telescope').setup {
       mappings = {
         i = {
           ["<C-k>"] = lga_actions.quote_prompt(),
+          ["<C-f>"] = append_prompt({ postfix = " -F " }),
           ["<C-i>"] = append_prompt({ postfix = " --iglob " }),
           ["<C-n>"] = append_prompt({ postfix = " --no-ignore " }),
           ["<C-h>"] = append_prompt({ postfix = " --hidden " }),
