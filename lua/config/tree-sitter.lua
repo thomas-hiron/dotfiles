@@ -4,10 +4,13 @@ require'nvim-treesitter.configs'.setup {
     "css",
     "html",
     "javascript",
+    "lua",
     "make",
     "php",
     "ruby",
     "twig",
+    "vim",
+    "vimdoc",
     "yaml",
   },
   highlight = {
