@@ -1,6 +1,8 @@
 local cmp = require('cmp')
 local lspkind = require('lspkind')
 
+-- vim.lsp.set_log_level('debug')
+
 cmp.setup({
   snippet = {
     expand = function(args)
