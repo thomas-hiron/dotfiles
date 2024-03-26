@@ -66,21 +66,19 @@ nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
 nnoremap <leader>tf <cmd>NvimTreeFindFile<cr>
 nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
 
-nnoremap <leader>gb <cmd>:Git blame<cr>
-nnoremap <leader>gd <cmd>:Gvdiffsplit<cr>
+" Git
+nnoremap <leader>gb <cmd>Git blame<cr>
+nnoremap <leader>gd <cmd>Gvdiffsplit<cr>
 
 " Symfony
-nnoremap <leader>s <cmd>:SymfonyGoto<cr>
-
-nnoremap J mzJ`z " Keep the cursor in place while joining lines
-map q: :q
-nnoremap <leader>w :ArgWrap<cr>
+nnoremap <leader>s <cmd>SymfonyGoto<cr>
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
+" Buffers
 nnoremap œ <cmd>BufferPrevious<cr>
 nnoremap æ <cmd>BufferNext<cr>
 nnoremap <leader>bc <cmd>BufferClose<cr>
@@ -89,6 +87,11 @@ nnoremap <leader>bp <cmd>BufferPick<cr>
 nnoremap <leader>bxl <cmd>BufferCloseBuffersLeft<cr>
 nnoremap <leader>bxr <cmd>BufferCloseBuffersRight<cr>
 
+" Others
+nnoremap J mzJ`z " Keep the cursor in place while joining lines
+map q: :q
+nnoremap <leader>w <cmd>ArgWrap<cr>
+nnoremap <leader>mp <cmd>MarkdownPreview<cr>
 nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
