@@ -50,6 +50,7 @@ nnoremap <leader>fo <cmd>Telescope oldfiles cwd_only=true<cr>
 nnoremap <leader>fs <cmd>Telescope resume<cr>
 vnoremap <leader>fv <cmd>lua require("telescope-live-grep-args.shortcuts").grep_visual_selection()<cr>
 nnoremap <leader>fw <cmd>lua require("telescope-live-grep-args.shortcuts").grep_word_under_cursor()<cr>
+nnoremap <leader>fy <cmd>YAMLTelescope<cr>
 nnoremap gd <cmd>Telescope lsp_definitions<cr>
 nnoremap gr <cmd>Telescope lsp_references<cr>
 nnoremap gi <cmd>Telescope lsp_implementations<cr>
@@ -92,6 +93,8 @@ nnoremap J mzJ`z " Keep the cursor in place while joining lines
 map q: :q
 nnoremap <leader>w <cmd>ArgWrap<cr>
 nnoremap <leader>mp <cmd>MarkdownPreview<cr>
+nnoremap <leader>yk <cmd>YAMLYankKey<cr>
+nnoremap <leader>yv <cmd>YAMLYankValue<cr>
 nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
@@ -114,6 +117,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Global plugins
 Plug 'akinsho/toggleterm.nvim'
 Plug 'alvan/vim-php-manual'
+Plug 'cuducos/yaml.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'folke/which-key.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }

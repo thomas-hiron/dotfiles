@@ -43,6 +43,7 @@ Then simply run `:PlugInstall`.
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): language pack plugin
 - [which-key](https://github.com/folke/which-key.nvim)
+- [yaml](https://github.com/cuducos/yaml.nvim): yaml integration (yank key/value, find with Telescope)
 
 ## Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.
