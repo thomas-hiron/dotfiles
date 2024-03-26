@@ -50,6 +50,10 @@ catch (${1} $e) {
 }
 endsnippet
 
+snippet thr "throw new"
+throw new ${1:\RuntimeException(${2})};
+endsnippet
+
 snippet ? "ternary"
 $1 ? $2 : $3
 endsnippet
