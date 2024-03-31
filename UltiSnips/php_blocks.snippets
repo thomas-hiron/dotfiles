@@ -36,6 +36,12 @@ foreach ($${1:variable} as $${2:key} => $${3:value}) {
 }
 endsnippet
 
+snippet match "match block"
+match(${1:true}) {
+    ${2}
+};
+endsnippet
+
 snippet try "try/catch"
 try {
     $1
