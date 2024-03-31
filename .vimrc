@@ -98,7 +98,7 @@ nnoremap <leader>yv <cmd>YAMLYankValue<cr>
 nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
-nnoremap ± :w<cr>
+nnoremap <C-l> :noh<cr>
 
 " autocmd
 if has('nvim')
