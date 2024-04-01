@@ -1,9 +1,31 @@
-# Full configuration for neovim
+# dotfiles
+
+This repo contains softwares configuration that I can't afford to lose:
+- i3wm
+- nvim
+- polybar
+
+## i3 configuration
+
+[i3 window manager](https://i3wm.org/) configuration should go to `$XDG_CONFIG_HOME/i3`.
+
+There is not much custom configuration:
+- keyboard layout
+- rofi and clipboard screen capture 
+- logout/reboot/power off mode
+- polybar
+
+### Prerequisites
+- rofi: dmenu replacement, with clipboard integration
+- maim: screenshot utility
+- feh: background utility
+
+## neovim configuration
 
 This configuration is optimized for a PHP environment.  
-Javascript, Yaml, Twig, Json, Behat, CS are also needed.
+Javascript, Yaml, Twig, Json, Behat, CSS are also needed.
 
-## Prerequisites
+### Prerequisites
 - [ripgrep](https://github.com/BurntSushi/ripgrep): for telescope search
 - [nerdfonts](https://www.nerdfonts.com/): specificaly Hack Nerd Font
 - Node (with NPM) for tsserver and others LSP
@@ -11,11 +33,11 @@ Javascript, Yaml, Twig, Json, Behat, CS are also needed.
 - [phpactor](https://github.com/phpactor/phpactor) for the nvim plugin
 - python3.10-venv for Nginx LSP
 
-## Installation
-Clone this project into `$XDG_CONFIG_HOME/nvim` and symlink `.vimrc` to home directory.  
+### Installation
+Symlink `nvim` directory to `$XDG_CONFIG_HOME/nvim` and `.vimrc` to home directory.  
 Then simply run `:PlugInstall`.
 
-## Installed plugins
+### Installed plugins
 - [argwrap](https://git.foosoft.net/alex/vim-argwrap.git): wrap/unwrap arguments
 - [barbar](https://github.com/romgrk/barbar.nvim): buffer as tabs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
@@ -45,13 +67,13 @@ Then simply run `:PlugInstall`.
 - [which-key](https://github.com/folke/which-key.nvim)
 - [yaml](https://github.com/cuducos/yaml.nvim): yaml integration (yank key/value, find with Telescope)
 
-## Installing a new plugin
+### Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.
 2. Run `:PlugInstall`
 3. If configuration is necessary, create a lua file in `lua/config`
 4. Require it in `lua/config/init.lua`
 
-## Installed tree-sitter parsers
+### Installed tree-sitter parsers
 - html
 - javascript
 - make
@@ -65,7 +87,7 @@ Install parsers with this command:
 :TSInstall make
 ```
 
-## LSP
+### LSP
 Installing a LSP is made easy with mason-lspconfig, just run the following command to install a LSP:  
 ```vim
 :MasonInstall dockerfile-language-server
@@ -79,7 +101,7 @@ Installing a LSP is made easy with mason-lspconfig, just run the following comma
 
 The corresponding LSP are attached in `lua/config/nvim-cmp.lua`.
 
-## PHPActor configuration
+### PHPActor configuration
 Symlink `phpactor.json` to `$XDG_CONFIG_HOME/phpactor`, and make sure the config file is loaded:
 ```bash
 phpactor status
@@ -87,12 +109,12 @@ phpactor status
 
 ![PHPActor status](docs/phpactor_status.jpg)
 
-## Troubleshooting
+### Troubleshooting
 
-### LSP
+#### LSP
 `:LspInfo` gives great infos about errors of LSP not correctly setup
 
-### Telescope FZF
+#### Telescope FZF
 If fzf fails to install, go to the plugin dir `$XDG_CONFIG_HOME/nvim/plugged/telescope-fzf-native.nvim` and run make: 
 ```bash
 make
