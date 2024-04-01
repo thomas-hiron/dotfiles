@@ -36,6 +36,9 @@ require('telescope').setup {
     file_ignore_patterns = {
       ".git",
     },
+    layout_config = {
+      width = 0.95
+    },
     mappings = {
       n = {
         ['þ'] = require('telescope.actions').delete_buffer
