@@ -119,3 +119,10 @@ If fzf fails to install, go to the plugin dir `$XDG_CONFIG_HOME/nvim/plugged/tel
 ```bash
 make
 ```
+
+## polybar configuration
+
+[polybar](https://github.com/polybar/polybar) configuration should go to `$XDG_CONFIG_HOME/polybar`.  
+This configuration is required by i3.
+
+There is a `launch.sh` script that starts the bar on each monitor.
