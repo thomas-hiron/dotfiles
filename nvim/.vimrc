@@ -9,6 +9,8 @@ set number relativenumber
 set nrformats-=octal
 set formatoptions-=t " do not automatically wrap text when typing
 set textwidth=0 " do not automatically wrap text when typing
+set splitbelow
+set splitright
 filetype on
 filetype indent on
 set mouse=a
