@@ -126,3 +126,6 @@ make
 This configuration is required by i3.
 
 There is a `launch.sh` script that starts the bar on each monitor.
+
+### Prerequisites
+- playerctl
