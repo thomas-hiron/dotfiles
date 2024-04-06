@@ -86,6 +86,16 @@ require('lspconfig').nginx_language_server.setup {
   capabilities = capabilities
 }
 
+-- require('lspconfig').cucumber_language_server.setup {
+--   capabilities = capabilities,
+--   settings = {
+--     cucumber = {
+--       features = { 'behat/**/*.feature' },
+--       glue = { 'vendor/friends-of-behat/mink-extension/src/Behat/MinkExtension/Context/**/*.php' },
+--     },
+--   }
+-- }
+
 require('lspconfig').phpactor.setup {
   capabilities = capabilities
 }
