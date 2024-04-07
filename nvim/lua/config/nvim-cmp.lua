@@ -22,6 +22,8 @@ cmp.setup({
           vim_item.kind = '🔤 Translation'
         elseif entry.source.name == 'twig' then
           vim_item.kind = '🌾 Twig'
+        elseif entry.source.name == 'twig_constants' then
+          vim_item.kind = '🌾 Twig constant'
         end
 
         return vim_item
@@ -55,6 +57,7 @@ cmp.setup({
       { name = 'symfony_routes' },
       { name = 'symfony_translations' },
       { name = 'twig' },
+      { name = 'twig_constants' },
     })
 })
 
