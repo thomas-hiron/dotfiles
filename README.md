@@ -127,5 +127,7 @@ This configuration is required by i3.
 
 There is a `launch.sh` script that starts the bar on each monitor.
 
+The network dropdown has been taken from https://github.com/P3rf/rofi-network-manager.
+
 ### Prerequisites
 - playerctl
