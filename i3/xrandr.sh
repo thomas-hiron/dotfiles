@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-monitors=$(xrandr --listactivemonitors | grep -Eo "\\S{3,}$" | xargs)
+# Get connected display name
+monitors=$(xrandr --query | grep -w connected | cut -d' ' -f1 | xargs)
 
 if [[ ${monitors} == "eDP-1 HDMI-1" ]]; then
     echo "[INFO] Setting eDP-1 right to HDMI-1"
