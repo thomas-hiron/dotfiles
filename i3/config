@@ -88,7 +88,10 @@ bindsym $mod+Ctrl+g exec gnome-control-center
 bindsym $mod+Ctrl+s exec gnome-control-center sound
 bindsym $mod+Ctrl+Shift+n exec gnome-control-center network
 bindsym $mod+Ctrl+n exec $HOME/.config/polybar/network/rofi-network-manager.sh
-bindsym $mod+Ctrl+a exec $HOME/.config/i3/aws.sh
+
+# AWS rofi EC2 selector
+bindsym $mod+i exec $HOME/.config/i3/aws.sh
+bindsym $mod+Shift+i exec $HOME/.config/i3/aws.sh no-cache
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

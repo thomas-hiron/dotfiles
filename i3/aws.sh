@@ -1,19 +1,31 @@
 #!/usr/bin/env bash
 
 ip_regex="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}"
+cache_file="/tmp/aws_rofi_list.txt"
+
+# Remove cache
+if [[ $1 == "no-cache" ]]; then
+    rm -f "${cache_file}"
+fi
 
 # Get running aws instances
-instances=$(aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[*].[InstanceId, PublicIpAddress, Tags[?Key==`Name`].Value[]]' --output json)
+if [[ ! -f "${cache_file}" ]]; then
+    instances=$(aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[*].[InstanceId, PublicIpAddress, Tags[?Key==`Name`].Value[]]' --output json | jq 'sort_by(.[0][2][0])')
 
-list=""
-while IFS= read -r line; do
-    host=$(echo "${line}" | grep -oE "i-[a-z0-9]+")
-    ip=$(echo "${line}" | grep -oE "${ip_regex}")
-    name=$(echo "${line}" | sed -n 's/.*\["\([^"]*\)"\].*/\1/p')
+    list=""
+    while IFS= read -r line; do
+        host=$(echo "${line}" | grep -oE "i-[a-z0-9]+")
+        ip=$(echo "${line}" | grep -oE "${ip_regex}")
+        name=$(echo "${line}" | sed -n 's/.*\["\([^"]*\)"\].*/\1/p')
 
-    # Create rofi list
-    list="${list}${name}: ${ip} (${host})\n"
-done <<< "$(echo "${instances}" | jq -c '.[][]')"
+        # Create rofi list
+        list="${list}${name}: ${ip} (${host})\n"
+    done <<< "$(echo "${instances}" | jq -c '.[][]')"
+
+    echo "${list}" > "${cache_file}"
+fi
+
+list=$(cat "${cache_file}")
 
 # Display rofi
 selected=$(echo -e "$list" | rofi -dmenu -i -p "Choose instance:")
