@@ -10,7 +10,7 @@ fi
 
 # Get running aws instances
 if [[ ! -f "${cache_file}" ]]; then
-    instances=$(aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[*].[InstanceId, PublicIpAddress, Tags[?Key==`Name`].Value[]]' --output json | jq 'sort_by(.[0][2][0])')
+    instances=$(aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[*].[InstanceId, PublicIpAddress, Tags[?Key==`Name`].Value[]]' --output json)
 
     list=""
     while IFS= read -r line; do
@@ -27,8 +27,8 @@ fi
 
 list=$(cat "${cache_file}")
 
-# Display rofi
-selected=$(echo -e "$list" | rofi -dmenu -i -p "Choose instance:")
+# Display rofi (truncate last line break char)
+selected=$(echo -e "${list::-1}" | sort | rofi -matching "fuzzy" -dmenu  -i -p "Choose instance:")
 
 # Get selected IP
 ip=$(echo "${selected}" | grep -oE "${ip_regex}")
