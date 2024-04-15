@@ -60,6 +60,7 @@ Then simply run `:PlugInstall`.
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter): with text objects plugin
 - [ulti-snips](https://github.com/SirVer/ultisnips/): snippets integration
 - [vim-abolish](https://github.com/tpope/vim-abolish): better substitution and coercion
+- [vim-commentary](https://github.com/tpope/vim-commentary): comment stuff out
 - [vim-fugitive](https://github.com/tpope/vim-fugitive): mostly for git blame
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-plug](https://github.com/junegunn/vim-plug)
