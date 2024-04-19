@@ -89,6 +89,7 @@ nnoremap <leader>br <cmd>BufferRestore<cr>
 nnoremap <leader>bp <cmd>BufferPick<cr>
 nnoremap <leader>bxl <cmd>BufferCloseBuffersLeft<cr>
 nnoremap <leader>bxr <cmd>BufferCloseBuffersRight<cr>
+nnoremap <leader>bxo <cmd>BufferCloseAllButCurrent<cr>
 
 " Others
 nnoremap J mzJ`z " Keep the cursor in place while joining lines
