@@ -33,6 +33,9 @@ end
 
 require('telescope').setup {
   defaults = {
+    cache_picker = {
+      num_pickers = 30,
+    },
     file_ignore_patterns = {
       ".git",
     },
