@@ -50,9 +50,14 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fr <cmd>Telescope registers<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles cwd_only=true<cr>
 nnoremap <leader>fs <cmd>Telescope resume<cr>
+nnoremap <leader>ft <cmd>Telescope help_tags<cr>
+nnoremap <leader>fp <cmd>Telescope pickers<cr>
 vnoremap <leader>fv <cmd>lua require("telescope-live-grep-args.shortcuts").grep_visual_selection()<cr>
 nnoremap <leader>fw <cmd>lua require("telescope-live-grep-args.shortcuts").grep_word_under_cursor()<cr>
 nnoremap <leader>fy <cmd>YAMLTelescope<cr>
+nnoremap <leader>tp <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find PHP files", find_command = {'fd', '--extension', 'php'} }<cr>
+nnoremap <leader>tj <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find Javascript files", find_command = {'fd', '--extension', 'js'} }<cr>
+nnoremap <leader>ty <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find Yaml files", find_command = {'fd', '--extension', 'yml', '--extension', 'yaml'} }<cr>
 nnoremap gd <cmd>Telescope lsp_definitions<cr>
 nnoremap gr <cmd>Telescope lsp_references<cr>
 nnoremap gi <cmd>Telescope lsp_implementations<cr>
