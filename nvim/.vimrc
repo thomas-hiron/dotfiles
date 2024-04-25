@@ -43,7 +43,10 @@ nnoremap <leader>k <Plug>(easymotion-b)
 " Telescope mapping
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fa <cmd>Telescope find_files no_ignore=true<cr>
+" Find exact file under cursor
 nnoremap <expr> <leader>fd ':Telescope find_files<cr>' . "'" . expand('<cword>')
+" Open telescope with current nvim-tree directory
+nnoremap <silent> <leader>fe :lua require('telescope.builtin').find_files({search_dirs = {require("nvim-tree.api").tree.get_node_under_cursor().absolute_path}})<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
