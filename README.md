@@ -16,9 +16,11 @@ There is not much custom configuration:
 - polybar
 
 ### Prerequisites
-- rofi: dmenu replacement, with clipboard integration
-- maim: screenshot utility
-- feh: background utility
+- [feh](https://github.com/derf/feh): background utility
+- [greenclip](https://github.com/erebe/greenclip): clipboard manager
+- [maim](https://github.com/naelstrof/maim): screenshot utility
+- [polybar](https://github.com/polybar/polybar): top bar, see below
+- [rofi](https://github.com/davatorium/rofi): dmenu replacement, with clipboard integration
 
 ## neovim configuration
 
