@@ -30,6 +30,7 @@ set listchars+=tab:<->
 set listchars+=eol:¬
 set listchars+=trail:⋅
 set listchars+=lead:⋅
+set listchars+=nbsp:‗
 
 " Allow project specific .vimrc
 set exrc
