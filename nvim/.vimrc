@@ -91,8 +91,8 @@ let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " Buffers
-nnoremap œ <cmd>BufferPrevious<cr>
-nnoremap æ <cmd>BufferNext<cr>
+nmap <C-J> <cmd>BufferPrevious<cr>
+nmap <C-K> <cmd>BufferNext<cr>
 nnoremap <leader>bc <cmd>BufferClose<cr>
 nnoremap <leader>br <cmd>BufferRestore<cr>
 nnoremap <leader>bp <cmd>BufferPick<cr>
