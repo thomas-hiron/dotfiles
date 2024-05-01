@@ -47,7 +47,8 @@ require('telescope').setup {
         ['þ'] = require('telescope.actions').delete_buffer
       },
       i = {
-        ['þ'] = require('telescope.actions').delete_buffer
+        ['þ'] = require('telescope.actions').delete_buffer,
+        ['<esc>'] = require('telescope.actions').close,
       }
     },
     path_display = filename_first
