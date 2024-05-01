@@ -26,6 +26,7 @@ require('gitsigns').setup {
     map('n', '<leader>gr', gs.reset_hunk, {desc = 'Remove this hunk'})
     map('n', '<leader>gS', gs.stage_buffer, {desc = 'Add all buffer hunks to the staging area'})
     map('n', '<leader>gR', gs.reset_buffer, {desc = 'Remove all buffer hunks'})
+    map('n', '<leader>gp', gs.preview_hunk, {desc = 'Preview hunk'})
 
     -- Text object
     map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
