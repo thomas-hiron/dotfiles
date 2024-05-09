@@ -76,6 +76,7 @@ require('telescope').setup {
           ["<C-n>"] = append_prompt({ postfix = " --no-ignore " }),
           ["<C-h>"] = append_prompt({ postfix = " --hidden " }),
           ["<C-t>"] = append_prompt({ postfix = " -t" }),
+          ["<C-p>"] = append_prompt({ postfix = " -tphp" }),
         }
       }
     }
