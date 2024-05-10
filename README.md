@@ -16,6 +16,7 @@ There is not much custom configuration:
 - polybar
 
 ### Prerequisites
+- [dunst](https://github.com/dunst-project/dunst): notification manager
 - [feh](https://github.com/derf/feh): background utility
 - [greenclip](https://github.com/erebe/greenclip): clipboard manager
 - [maim](https://github.com/naelstrof/maim): screenshot utility
