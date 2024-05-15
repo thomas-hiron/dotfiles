@@ -80,6 +80,10 @@ bindsym $mod+j exec --no-startup-id maim --select | xclip -selection clipboard -
 # Open clipboard manager
 bindsym $mod+p exec "rofi -modi 'clipboard:greenclip print' -show"
 
+# Pop last histories
+bindsym $mod+m exec "dunstctl history-pop"
+bindsym $mod+Shift+m exec "dunstctl close-all"
+
 # Lock screen
 bindsym Mod4+l exec "i3lock -c 000000"
 
