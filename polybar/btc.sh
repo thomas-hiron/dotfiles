@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-btc=$(curl -s "https://api.blockchain.com/v3/exchange/tickers/BTC-EUR" -H  "accept: application/json" | jq -r ".last_trade_price")
+btc=$(curl -Ls 'https://api.bitvavo.com/v2/ticker/24h' | jq -r '.[] | select(.market == "BTC-EUR").last')
 
 echo -n "BTC: ${btc%.*} €"
