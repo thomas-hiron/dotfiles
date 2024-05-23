@@ -2,6 +2,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/bin:$PATH"
 export EDITOR="vim"
 export KEYTIMEOUT=1
+export HISTSIZE=100000
+export SAVEHIST=100000
 
 ZSH_THEME="gentoo"
 
