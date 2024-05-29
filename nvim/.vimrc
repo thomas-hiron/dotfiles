@@ -135,6 +135,7 @@ Plug 'cuducos/yaml.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'folke/which-key.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'hotwatermorning/auto-git-diff'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'neovim/nvim-lspconfig'
