@@ -5,7 +5,7 @@ export KEYTIMEOUT=1
 export HISTSIZE=100000
 export SAVEHIST=100000
 
-ZSH_THEME="gentoo"
+ZSH_THEME="simple"
 
 plugins=(git)
 ZSH_DISABLE_COMPFIX=true
