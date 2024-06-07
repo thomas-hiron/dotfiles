@@ -101,7 +101,7 @@ bindsym $mod+Shift+i exec $HOME/.config/i3/aws.sh no-cache
 bindsym $mod+o exec $HOME/.config/i3/pass.sh
 
 # Rofi emoji selector
-bindsym $mod+k exec "rofimoji"
+bindsym $mod+k exec "rofimoji --skin-tone neutral"
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
