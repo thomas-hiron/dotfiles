@@ -28,7 +28,7 @@ fi
 list=$(cat "${cache_file}")
 
 # Display rofi (truncate last line break char)
-selected=$(echo -e "${list::-1}" | sort | rofi -matching "fuzzy" -dmenu  -i -p "Choose instance:")
+selected=$(echo -e "${list::-1}" | sort | rofi -matching "fuzzy" -dmenu -i -p "Choose instance")
 
 # Get selected IP
 ip=$(echo "${selected}" | grep -oE "${ip_regex}")
