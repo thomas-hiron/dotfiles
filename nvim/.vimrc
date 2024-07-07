@@ -176,10 +176,6 @@ Plug 'thomas-hiron/cmp-twig-constants'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'SirVer/ultisnips'
 
-" Indent plugins (don't sort, vim-polyglot must be loaded first)
-Plug 'sheerun/vim-polyglot'
-Plug 'lumiliet/vim-twig'
-
 " Theme plugins
 Plug 'sainnhe/edge'
 
