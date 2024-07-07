@@ -50,7 +50,6 @@ nnoremap <expr> <leader>fd ':Telescope find_files<cr>' . "'" . expand('<cword>')
 nnoremap <silent> <leader>fe :lua require('telescope.builtin').find_files({search_dirs = {require("nvim-tree.api").tree.get_node_under_cursor().absolute_path}})<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fr <cmd>Telescope registers<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles cwd_only=true<cr>
 nnoremap <leader>fs <cmd>Telescope resume<cr>
