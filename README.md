@@ -54,6 +54,7 @@ Then simply run `:PlugInstall`.
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): rename matching html tags 
 - [quickfix-reflector](https://github.com/stefandtw/quickfix-reflector.vim): edit quickfix list
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
   - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search

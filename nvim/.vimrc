@@ -156,6 +156,7 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
+Plug 'windwp/nvim-ts-autotag'
 Plug 'https://git.foosoft.net/alex/vim-argwrap.git'
 
 " Aucomplete plugins
