@@ -42,7 +42,6 @@ Then simply run `:PlugInstall`.
 
 ### Installed plugins
 - [argwrap](https://git.foosoft.net/alex/vim-argwrap.git): wrap/unwrap arguments
-- [auto-git-diff](https://github.com/hotwatermorning/auto-git-diff): add git during during interactive rebase
 - [barbar](https://github.com/romgrk/barbar.nvim): buffer as tabs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
 - [easy-motion](https://github.com/easymotion/vim-easymotion): move rapidly into current buffer
@@ -69,7 +68,6 @@ Then simply run `:PlugInstall`.
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): language pack plugin
-- [which-key](https://github.com/folke/which-key.nvim)
 - [yaml](https://github.com/cuducos/yaml.nvim): yaml integration (yank key/value, find with Telescope)
 
 ### Installing a new plugin
