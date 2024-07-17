@@ -11,6 +11,7 @@ set formatoptions-=t " do not automatically wrap text when typing
 set textwidth=0 " do not automatically wrap text when typing
 set splitbelow
 set splitright
+set cursorline
 filetype on
 filetype indent on
 set mouse=a
