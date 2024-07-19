@@ -11,7 +11,6 @@ set formatoptions-=t " do not automatically wrap text when typing
 set textwidth=0 " do not automatically wrap text when typing
 set splitbelow
 set splitright
-set cursorline
 filetype on
 filetype indent on
 set mouse=a
@@ -116,6 +115,8 @@ nnoremap <C-l> :noh<cr>
 
 " autocmd
 if has('nvim')
+  set cursorline
+
   autocmd BufReadPost * call general#RestoreCursorPosition()
   autocmd BufWrite *.php,*.js,*.twig,*.html,*.sh,*.yaml,*.yml,*.vim,*.lua,*.feature call general#DeleteTrailingSpace()
 end
