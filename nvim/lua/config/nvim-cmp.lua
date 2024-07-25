@@ -3,6 +3,18 @@ local lspkind = require('lspkind')
 
 -- vim.lsp.set_log_level('debug')
 
+-- Define floating windows borders
+vim.cmd([[
+  highlight NormalFloat guibg=#ffffff guifg=#444444
+  highlight FloatBorder guibg=#ffffff guifg=#444444
+]])
+
+-- LSP hover borders
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = "rounded",
+  winhighlight = 'Normal:NormalFloat,FloatBorder:FloatBorder',
+})
+
 cmp.setup({
   snippet = {
     expand = function(args)
@@ -30,9 +42,14 @@ cmp.setup({
       end
     }),
   },
+  -- Autocomplete borders
   window = {
-    completion = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
+    completion = cmp.config.window.bordered({
+      winhighlight = 'Normal:NormalFloat,FloatBorder:FloatBorder',
+    }),
+    documentation = cmp.config.window.bordered({
+      winhighlight = 'Normal:NormalFloat,FloatBorder:FloatBorder',
+    }),
   },
   mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
