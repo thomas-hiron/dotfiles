@@ -112,10 +112,18 @@ require('lspconfig').nginx_language_server.setup {
 --   }
 -- }
 
+require('lspconfig').gitlab_ci_ls.setup {
+  capabilities = capabilities
+}
+
 require('lspconfig').intelephense.setup {
   capabilities = capabilities
 }
 
 require('lspconfig').tsserver.setup {
+  capabilities = capabilities
+}
+
+require('lspconfig').yamlls.setup {
   capabilities = capabilities
 }
