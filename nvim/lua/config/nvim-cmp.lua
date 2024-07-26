@@ -112,7 +112,7 @@ require('lspconfig').nginx_language_server.setup {
 --   }
 -- }
 
-require('lspconfig').phpactor.setup {
+require('lspconfig').intelephense.setup {
   capabilities = capabilities
 }
 
