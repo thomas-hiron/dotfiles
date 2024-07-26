@@ -74,6 +74,10 @@ cmp.setup({
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+require('lspconfig').bashls.setup {
+  capabilities = capabilities
+}
+
 require('lspconfig').docker_compose_language_service.setup {
   capabilities = capabilities
 }
@@ -84,6 +88,14 @@ require('lspconfig').dockerls.setup {
 
 require('lspconfig').emmet_language_server.setup {
   filetypes = { "css", "html", "sass", "scss", "twig" },
+  capabilities = capabilities
+}
+
+require('lspconfig').gitlab_ci_ls.setup {
+  capabilities = capabilities
+}
+
+require('lspconfig').intelephense.setup {
   capabilities = capabilities
 }
 
@@ -111,14 +123,6 @@ require('lspconfig').nginx_language_server.setup {
 --     },
 --   }
 -- }
-
-require('lspconfig').gitlab_ci_ls.setup {
-  capabilities = capabilities
-}
-
-require('lspconfig').intelephense.setup {
-  capabilities = capabilities
-}
 
 require('lspconfig').tsserver.setup {
   capabilities = capabilities
