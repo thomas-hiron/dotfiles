@@ -61,13 +61,6 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
   }, {
-      {
-        name = 'dotenv',
-        option = {
-          load_shell = false,
-          show_documentation = false,
-        }
-      },
       { name = 'html_class' },
       { name = 'path' },
       { name = 'buffer' },
