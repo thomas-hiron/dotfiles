@@ -17,6 +17,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Start greenclip clipboard manager
+exec --no-startup-id greenclip daemon
+
 # Change keyboard layout
 exec_always --no-startup-id "setxkbmap -layout fr -variant latin9"
 
