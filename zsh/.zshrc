@@ -4,6 +4,7 @@ export EDITOR="vim"
 export KEYTIMEOUT=1
 export HISTSIZE=100000
 export SAVEHIST=100000
+export GPG_TTY=$(tty)
 
 ZSH_THEME="simple"
 
@@ -64,7 +65,7 @@ function generate_html_class_autocomplete() {
     mv $temp_dir/grouped.json ~/generated_html_classes.json
 }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # Non versionnable file
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
