@@ -100,7 +100,7 @@ bindsym $mod+Shift+i exec $HOME/.config/i3/aws.sh no-cache
 bindsym $mod+o exec $HOME/.config/i3/pass.sh
 
 # Rofi emoji selector
-bindsym $mod+k exec $HOME/.config/i3/emoji.sh
+bindsym $mod+k exec rofi -modi emoji -show emoji
 
 # Rofi calc
 bindsym $mod+u exec rofi -show calc -modi calc -no-show-match -no-sort
