@@ -48,6 +48,8 @@ nnoremap <leader>fa <cmd>Telescope find_files no_ignore=true<cr>
 nnoremap <expr> <leader>fd ':Telescope find_files<cr>' . "'" . expand('<cword>')
 " Open telescope with current nvim-tree directory
 nnoremap <silent> <leader>fe :lua require('telescope.builtin').find_files({search_dirs = {require("nvim-tree.api").tree.get_node_under_cursor().absolute_path}})<cr>
+" Live grep with current nvim-tree directory
+nnoremap <silent> <leader>fz :lua require('telescope').extensions.live_grep_args.live_grep_args({search_dirs = {require("nvim-tree.api").tree.get_node_under_cursor().absolute_path}})<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fr <cmd>Telescope registers<cr>
