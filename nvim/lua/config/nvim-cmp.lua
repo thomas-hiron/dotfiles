@@ -124,7 +124,7 @@ require('lspconfig').nginx_language_server.setup {
 --   }
 -- }
 
-require('lspconfig').tsserver.setup {
+require('lspconfig').ts_ls.setup {
   capabilities = capabilities
 }
 
