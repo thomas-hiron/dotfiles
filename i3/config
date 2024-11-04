@@ -192,8 +192,10 @@ for_window [class="Gnome-calendar"] floating enable, resize set 400 400
 # Remove title bar
 for_window [class="^.*"] border pixel 0
 
-# Small gap on top only
-gaps top 3px
+# Small gap on top and between windows only
+gaps outer -5px
+gaps inner 5px
+gaps top 0px
 
 # Start xrandr and polybar
 exec_always --no-startup-id $HOME/.config/i3/xrandr.sh
