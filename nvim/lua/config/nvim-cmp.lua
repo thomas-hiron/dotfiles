@@ -129,5 +129,10 @@ require('lspconfig').ts_ls.setup {
 }
 
 require('lspconfig').yamlls.setup {
-  capabilities = capabilities
+  capabilities = capabilities,
+  settings = {
+    yaml = {
+      validate = false,
+    },
+  }
 }
