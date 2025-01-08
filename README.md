@@ -105,14 +105,6 @@ Installing a LSP is made easy with mason-lspconfig, just run the following comma
 
 The corresponding LSP are attached in `lua/config/nvim-cmp.lua`.
 
-### PHPActor configuration
-Symlink `phpactor.json` to `$XDG_CONFIG_HOME/phpactor`, and make sure the config file is loaded:
-```bash
-phpactor status
-```
-
-![PHPActor status](docs/phpactor_status.jpg)
-
 ### Troubleshooting
 
 #### LSP
