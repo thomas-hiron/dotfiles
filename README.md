@@ -124,6 +124,19 @@ If fzf fails to install, go to the plugin dir `$XDG_CONFIG_HOME/nvim/plugged/tel
 make
 ```
 
+### Tips
+
+#### vim-fugitive tips
+##### :Git blame
+- `-` reblames selected commit
+- `<CR>` opens commit, `<CR>` can be used again to navigate in patch and file
+
+##### Commit object
+- `.GBrowse` opens it in configured git browser
+
+##### File
+- `:0Gclog` opens log for current file in quickfix list
+
 ## polybar configuration
 
 [polybar](https://github.com/polybar/polybar) configuration should go to `$XDG_CONFIG_HOME/polybar`.  
