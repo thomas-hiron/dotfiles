@@ -86,6 +86,8 @@ nnoremap <leader>gd <cmd>Gvdiffsplit<cr>
 " Symfony
 nnoremap <leader>s <cmd>SymfonyGoto<cr>
 
+cnoreabbrev sg SymfonyGotoRoute
+
 " Snippets
 let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
