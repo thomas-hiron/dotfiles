@@ -89,7 +89,7 @@ nnoremap <leader>s <cmd>SymfonyGoto<cr>
 cnoreabbrev sg SymfonyGotoRoute
 
 " Snippets
-let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
