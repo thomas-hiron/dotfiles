@@ -135,6 +135,13 @@ require('lspconfig').nginx_language_server.setup {
 --   }
 -- }
 
+require('lspconfig').tailwindcss.setup {
+  capabilities = capabilities,
+  filetypes = {
+    'twig'
+  }
+}
+
 require('lspconfig').ts_ls.setup {
   capabilities = capabilities
 }
