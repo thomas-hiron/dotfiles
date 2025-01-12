@@ -96,7 +96,18 @@ require('lspconfig').gitlab_ci_ls.setup {
 }
 
 require('lspconfig').intelephense.setup {
-  capabilities = capabilities
+  capabilities = capabilities,
+  init_options = {
+    licenceKey = ""
+  },
+  settings = {
+    -- https://github.com/bmewburn/vscode-intelephense/issues/1253
+    intelephense = {
+      references = {
+        exclude = {}
+      }
+    }
+}
 }
 
 require('lspconfig').lua_ls.setup {
