@@ -51,7 +51,10 @@ require('telescope').setup {
         ['<esc>'] = require('telescope.actions').close,
       }
     },
-    path_display = filename_first
+    path_display = filename_first,
+    preview = {
+      filesize_limit = 0.05,
+    }
   },
   pickers = {
     find_files = {
