@@ -59,6 +59,7 @@ Then simply run `:PlugInstall`.
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
   - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search
   - [telescope-live-grep-args](https://github.com/nvim-telescope/telescope-live-grep-args.nvim): usage of rg args
+  - [telescope-all-recent](https://github.com/prochri/telescope-all-recent.nvim): sort pickers by mostly used results
 - [toggleterm](https://github.com/akinsho/toggleterm.nvim): terminal
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter): with text objects plugin

@@ -164,6 +164,10 @@ Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'https://git.foosoft.net/alex/vim-argwrap.git'
 
+" Telescope picker order
+Plug 'kkharji/sqlite.lua' " telescope-all-recent dep
+Plug 'prochri/telescope-all-recent.nvim' " Order pickers by most used
+
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-buffer' " Autocomplete with words in current buffer
 Plug 'hrsh7th/cmp-nvim-lsp' " LSP integration
