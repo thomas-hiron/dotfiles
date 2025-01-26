@@ -72,6 +72,7 @@ Then simply run `:PlugInstall`.
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): language pack plugin
 - [yaml](https://github.com/cuducos/yaml.nvim): yaml integration (yank key/value, find with Telescope)
+- [yanky](https://github.com/gbprod/yanky.nvim): yank history with Telescope integration
 
 ### Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.

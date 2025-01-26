@@ -59,7 +59,7 @@ nnoremap <leader>ft <cmd>Telescope help_tags<cr>
 nnoremap <leader>fp <cmd>Telescope pickers<cr>
 vnoremap <leader>fv <cmd>lua require("telescope-live-grep-args.shortcuts").grep_visual_selection()<cr>
 nnoremap <leader>fw <cmd>lua require("telescope-live-grep-args.shortcuts").grep_word_under_cursor()<cr>
-nnoremap <leader>fy <cmd>YAMLTelescope<cr>
+nnoremap <leader>fy <cmd>Telescope yank_history<cr>
 nnoremap <leader>tp <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find PHP files", find_command = {'fd', '--extension', 'php'} }<cr>
 nnoremap <leader>tj <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find Javascript files", find_command = {'fd', '--extension', 'js'} }<cr>
 nnoremap <leader>ty <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find Yaml files", find_command = {'fd', '--extension', 'yml', '--extension', 'yaml'} }<cr>
@@ -141,6 +141,7 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'alvan/vim-php-manual'
 Plug 'cuducos/yaml.nvim'
 Plug 'easymotion/vim-easymotion'
+Plug 'gbprod/yanky.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
