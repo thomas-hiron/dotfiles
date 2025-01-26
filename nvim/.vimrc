@@ -82,6 +82,9 @@ nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
 " Git
 nnoremap <leader>gb <cmd>Git blame<cr>
 nnoremap <leader>gd <cmd>Gvdiffsplit<cr>
+nnoremap <leader>gd <cmd>DiffviewOpen<cr>
+nnoremap <leader>gc <cmd>DiffviewClose<cr>
+nnoremap <leader>gf <cmd>DiffviewFileHistory --follow %<cr>
 
 " Symfony
 nnoremap <leader>s <cmd>SymfonyGoto<cr>
@@ -154,6 +157,7 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects', has('nvim') ? {} : { 'on': [
 Plug 'romgrk/barbar.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'sindrets/diffview.nvim'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'stevearc/dressing.nvim'
 Plug 'thomas-hiron/symfony-goto.nvim'

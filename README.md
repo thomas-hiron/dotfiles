@@ -43,6 +43,7 @@ Then simply run `:PlugInstall`.
 ### Installed plugins
 - [argwrap](https://git.foosoft.net/alex/vim-argwrap.git): wrap/unwrap arguments
 - [barbar](https://github.com/romgrk/barbar.nvim): buffer as tabs
+- [diffview](https://github.com/sindrets/diffview.nvim): cycle through git diffs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
 - [easy-motion](https://github.com/easymotion/vim-easymotion): move rapidly into current buffer
 - [edge](https://github.com/sainnhe/edge): color theme (goes with [xfce4-terminal theme](https://github.com/xelser/edge-xfce4-terminal/blob/main/edge-light.theme))

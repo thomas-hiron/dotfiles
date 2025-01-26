@@ -1,4 +1,5 @@
 require('config/barbar')
+require('config/diffview')
 require('config/edge')
 require('config/gitsigns')
 require('config/illuminate')
