@@ -68,7 +68,7 @@ function generate_html_class_autocomplete() {
 source <(fzf --zsh)
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-    --color=fg:#96b1c8,fg+:#7a92a9,bg:#fafafa,bg+:#eef1f4
+    --color=fg:#698fb0,fg+:#51677b,bg:#fafafa,bg+:#eef1f4
     --color=hl:#5079be,hl+:#2d5fb5,info:#afaf87,marker:#5079be
     --color=prompt:#5079be,spinner:#5079be,pointer:#5079be,header:#87afaf
     --color=border:#bac3cb,label:#aeaeae,query:#7a92a9
