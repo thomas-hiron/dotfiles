@@ -21,6 +21,9 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab shiftround autoindent " Inden
 autocmd FileType lua setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 autocmd FileType yaml setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
+" Highlight yanked text
+autocmd TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=200 }
+
 set signcolumn=yes " Always show the sign column
 
 " List chars displayed as guides
