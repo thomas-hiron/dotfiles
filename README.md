@@ -30,7 +30,7 @@ Javascript, Yaml, Twig, Json, Behat, CSS are also needed.
 
 ### Prerequisites
 - [ripgrep](https://github.com/BurntSushi/ripgrep): for telescope search
-- [nerdfonts](https://www.nerdfonts.com/): specificaly Hack Nerd Font
+- [nerdfonts](https://www.nerdfonts.com/): specificaly Hack Nerd Font or JetBrainsMono Nerd Font
 - Node (with NPM) for tsserver and others LSP
 - PHP and Composer for phpactor
 - [phpactor](https://github.com/phpactor/phpactor) for the nvim plugin
