@@ -18,3 +18,6 @@ endfunction
 
 " Enable twig indent function
 autocmd FileType twig call TwigIndent()
+
+" Add find_usages mapping
+autocmd FileType twig nnoremap <buffer> <leader>fu <cmd>call twig#FindUsages()<cr>
