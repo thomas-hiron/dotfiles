@@ -90,8 +90,10 @@ nnoremap <leader>gf <cmd>DiffviewFileHistory --follow %<cr>
 
 " Symfony
 nnoremap <leader>s <cmd>SymfonyGoto<cr>
+command! -nargs=1 SymfonyGotoRouteView call general#GotoTwigView(<f-args>)
 
 cnoreabbrev sg SymfonyGotoRoute
+cnoreabbrev sv SymfonyGotoRouteView
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<Tab>"
