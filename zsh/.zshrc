@@ -65,6 +65,9 @@ function generate_html_class_autocomplete() {
     mv $temp_dir/grouped.json ~/generated_html_classes.json
 }
 
+source ~/.oh-my-zsh/custom/plugins/zsh-abbr/zsh-abbr.zsh
+abbr m="make" 2>/dev/null
+
 source <(fzf --zsh)
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
