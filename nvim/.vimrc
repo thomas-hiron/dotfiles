@@ -96,6 +96,7 @@ command! -nargs=1 SymfonyGotoRouteView call general#GotoTwigView(<f-args>)
 
 cnoreabbrev sg SymfonyGotoRoute
 cnoreabbrev sv SymfonyGotoRouteView
+inoreabbrev emi EntityManagerInterface
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<Tab>"
