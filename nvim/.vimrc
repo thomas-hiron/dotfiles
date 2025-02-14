@@ -69,7 +69,9 @@ nnoremap <leader>ty <cmd>lua require('telescope.builtin').find_files { prompt_ti
 nnoremap gd <cmd>Telescope lsp_definitions<cr>
 nnoremap gr <cmd>Telescope lsp_references<cr>
 nnoremap gi <cmd>Telescope lsp_implementations<cr>
-nnoremap gs <cmd>Telescope lsp_document_symbols<cr>
+nnoremap gss <cmd>Telescope lsp_document_symbols<cr>
+nnoremap gsm <cmd>Telescope lsp_document_symbols default_text=:method:<cr>
+nnoremap gsp <cmd>Telescope lsp_document_symbols default_text=:property:<cr>
 
 " LSP mapping
 nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
