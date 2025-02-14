@@ -38,6 +38,7 @@ require('telescope').setup {
     },
     file_ignore_patterns = {
       ".git",
+      "sdk",
     },
     layout_config = {
       width = 0.95
@@ -75,7 +76,7 @@ require('telescope').setup {
         i = {
           ["<C-k>"] = lga_actions.quote_prompt(),
           ["<C-f>"] = append_prompt({ postfix = " -F " }),
-          ["<C-i>"] = append_prompt({ postfix = " --iglob " }),
+          ["<C-i>"] = append_prompt({ postfix = " --ignore-case " }),
           ["<C-n>"] = append_prompt({ postfix = " --no-ignore " }),
           ["<C-h>"] = append_prompt({ postfix = " --hidden " }),
           ["<C-t>"] = append_prompt({ postfix = " -t" }),
