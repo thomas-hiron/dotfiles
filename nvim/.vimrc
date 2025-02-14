@@ -123,6 +123,7 @@ nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
 nnoremap <C-l> :noh<cr>
+nnoremap <leader>o :only<cr>
 
 " autocmd
 if has('nvim')
