@@ -192,6 +192,7 @@ Plug 'thomas-hiron/cmp-symfony-routes'
 Plug 'thomas-hiron/cmp-symfony-translations'
 Plug 'thomas-hiron/cmp-twig'
 Plug 'thomas-hiron/cmp-twig-constants'
+Plug 'thomas-hiron/cmp-twig-templates'
 
 " Snippets plugins
 Plug 'hrsh7th/vim-vsnip'

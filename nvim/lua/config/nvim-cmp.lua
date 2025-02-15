@@ -36,6 +36,8 @@ cmp.setup({
           vim_item.kind = '🌾 Twig'
         elseif entry.source.name == 'twig_constants' then
           vim_item.kind = '🌾 Twig constant'
+        elseif entry.source.name == 'twig_templates' then
+          vim_item.kind = '🌾 Twig template'
         end
 
         return vim_item
@@ -68,6 +70,7 @@ cmp.setup({
       { name = 'symfony_translations' },
       { name = 'twig' },
       { name = 'twig_constants' },
+      { name = 'twig_templates' },
     })
 })
 
