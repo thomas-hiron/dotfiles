@@ -2,7 +2,7 @@
 nmap <Leader>le <Cmd>1call search('extends')<CR>W<Cmd>lua vim.lsp.buf.definition()<CR>
 
 " Goes to overriden method
-nnoremap <Leader>e :call GoToOverridenMethod()<CR>
+nnoremap <Leader>lo :call GoToOverridenMethod()<CR>
 
 function! GoToOverridenMethod()
     let line = getline('.')
