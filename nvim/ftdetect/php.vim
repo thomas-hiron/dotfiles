@@ -1,14 +1,14 @@
 " Goes to extended class
-nmap <Leader>le <Cmd>1call search('extends')<CR>W<Cmd>lua vim.lsp.buf.definition()<CR>
+autocmd FileType php nmap <Leader>le <Cmd>1call search('extends')<CR>W<Cmd>lua vim.lsp.buf.definition()<CR>
 
 " Goes to next view
-nmap <Leader>lv <Cmd>call search('render')<CR>t/gf
+autocmd FileType php nmap <Leader>lv <Cmd>call search('render')<CR>t/gf
 
 " Goes to overriden method
-nnoremap <Leader>lo :call GoToOverridenMethod()<CR>
+autocmd FileType php nnoremap <Leader>lo :call GoToOverridenMethod()<CR>
 
 " Goes to first method of line
-nmap <Leader>ll ^t(gd
+autocmd FileType php nmap <Leader>ll ^t(gd
 
 function! GoToOverridenMethod()
     let line = getline('.')

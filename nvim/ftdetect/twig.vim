@@ -23,4 +23,4 @@ autocmd FileType twig call TwigIndent()
 autocmd FileType twig nnoremap <buffer> <leader>fu <cmd>call twig#FindUsages()<cr>
 
 " Goes to next view
-nmap <Leader>lv <Cmd>call search('include')<CR>t/gf
+autocmd FileType twig nmap <Leader>lv <Cmd>call search('include')<CR>t/gf
