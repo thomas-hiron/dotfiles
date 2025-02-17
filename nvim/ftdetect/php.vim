@@ -7,6 +7,9 @@ nmap <Leader>lv <Cmd>call search('render')<CR>t/gf
 " Goes to overriden method
 nnoremap <Leader>lo :call GoToOverridenMethod()<CR>
 
+" Goes to first method of line
+nmap <Leader>ll ^t(gd
+
 function! GoToOverridenMethod()
     let line = getline('.')
     let pattern = '\v^.+\('
