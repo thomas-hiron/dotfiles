@@ -90,6 +90,12 @@ nnoremap <leader>gd <cmd>DiffviewOpen<cr>
 nnoremap <leader>gc <cmd>DiffviewClose<cr>
 nnoremap <leader>gf <cmd>DiffviewFileHistory --follow %<cr>
 
+" Argonaut
+xnoremap ia :<C-U>ArgonautObject inner<CR>
+onoremap ia :<C-U>ArgonautObject inner<CR>
+xnoremap aa :<C-U>ArgonautObject outer<CR>
+onoremap aa :<C-U>ArgonautObject outer<CR>
+
 " Symfony
 nnoremap <leader>s <cmd>SymfonyGoto<cr>
 command! -nargs=1 SymfonyGotoRouteView call general#GotoTwigView(<f-args>)
@@ -118,7 +124,7 @@ nnoremap <leader>bmr <cmd>BufferMoveNext<cr>
 " Others
 nnoremap J mzJ`z " Keep the cursor in place while joining lines
 map q: :q
-nnoremap <leader>w <cmd>ArgWrap<cr>
+nnoremap <leader>w <cmd>ArgonautToggle<cr>
 nnoremap <leader>mp <cmd>MarkdownPreview<cr>
 nnoremap <leader>yk <cmd>YAMLYankKey<cr>
 nnoremap <leader>yv <cmd>YAMLYankValue<cr>
@@ -147,6 +153,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Global plugins
 Plug 'akinsho/toggleterm.nvim'
 Plug 'alvan/vim-php-manual'
+Plug 'https://git.sr.ht/~foosoft/argonaut.nvim'
 Plug 'cuducos/yaml.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'gbprod/yanky.nvim'
@@ -162,7 +169,6 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'nvim-treesitter/nvim-treesitter-textobjects', has('nvim') ? {} : { 'on': [] }
 Plug 'romgrk/barbar.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'shumphrey/fugitive-gitlab.vim'
@@ -175,7 +181,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
-Plug 'https://git.foosoft.net/alex/vim-argwrap.git'
 
 " Telescope picker order
 Plug 'kkharji/sqlite.lua' " telescope-all-recent dep

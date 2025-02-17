@@ -1,3 +1,4 @@
+require('config/argonaut')
 require('config/barbar')
 require('config/diffview')
 require('config/edge')

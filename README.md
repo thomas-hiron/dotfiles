@@ -41,7 +41,7 @@ Symlink `nvim` directory to `$XDG_CONFIG_HOME/nvim` and `.vimrc` to home directo
 Then simply run `:PlugInstall`.
 
 ### Installed plugins
-- [argwrap](https://git.foosoft.net/alex/vim-argwrap.git): wrap/unwrap arguments
+- [argonaut](https://git.sr.ht/~foosoft/argonaut.nvim): wrap/unwrap arguments
 - [barbar](https://github.com/romgrk/barbar.nvim): buffer as tabs
 - [diffview](https://github.com/sindrets/diffview.nvim): cycle through git diffs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface

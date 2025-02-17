@@ -22,24 +22,4 @@ require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true
   },
-  textobjects = {
-    select = {
-      enable = true,
-      lookahead = true,
-      keymaps = {
-        ["aa"] = "@parameter.outer",
-        ["ia"] = "@parameter.inner",
-      },
-      include_surrounding_whitespace = true,
-    },
-    move = {
-      enable = true,
-      goto_next_start = {
-        ["]a"] = "@parameter.inner",
-      },
-      goto_previous_start = {
-        ["[a"] = "@parameter.inner",
-      },
-    },
-  },
 }
