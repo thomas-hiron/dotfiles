@@ -23,3 +23,18 @@ function general#GotoTwigView(route)
     normal t/gf
     execute 'bd ' buffer
 endfunc
+
+function general#GotoFormType(route)
+    " Open controller for route
+    execute 'SymfonyGotoRoute' a:route
+
+    " Next formType
+    call search('Type::')
+
+    " Keep buffer number
+    let buffer = bufnr('%')
+
+    " Open view and close previous buffer
+    normal gd
+    execute 'bd ' buffer
+endfunc
