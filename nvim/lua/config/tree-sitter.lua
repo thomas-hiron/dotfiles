@@ -1,6 +1,7 @@
 require'nvim-treesitter'.setup {}
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {
+    "c",
     "css",
     "dockerfile",
     "html",
@@ -8,11 +9,14 @@ require'nvim-treesitter.configs'.setup {
     "lua",
     "make",
     "markdown",
+    "markdown_inline",
     "php",
+    "query",
     "ruby",
     "twig",
     "vim",
     "vimdoc",
+    "vue",
     "yaml",
   },
   highlight = {
