@@ -38,6 +38,8 @@ cmp.setup({
           vim_item.kind = '🌾 Twig constant'
         elseif entry.source.name == 'twig_templates' then
           vim_item.kind = '🌾 Twig template'
+        elseif entry.source.name == 'form_options' then
+          vim_item.kind = '📋 Form options'
         end
 
         return vim_item
@@ -66,6 +68,7 @@ cmp.setup({
       { name = 'html_class' },
       { name = 'path' },
       { name = 'buffer' },
+      { name = 'form_options' },
       { name = 'symfony_routes' },
       { name = 'symfony_translations' },
       { name = 'twig' },

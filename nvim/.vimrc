@@ -195,11 +195,11 @@ Plug 'hrsh7th/cmp-path' " Autocomplete for system path
 Plug 'hrsh7th/nvim-cmp'
 Plug 'onsails/lspkind.nvim' " Additional contextual menu info
 Plug 'thomas-hiron/cmp-html-class'
-Plug 'thomas-hiron/cmp-symfony-routes'
 Plug 'thomas-hiron/cmp-symfony-translations'
 Plug 'thomas-hiron/cmp-twig'
 Plug 'thomas-hiron/cmp-twig-constants'
 Plug 'thomas-hiron/cmp-twig-templates'
+Plug 'thomas-hiron/cmp-symfony'
 
 " Snippets plugins
 Plug 'hrsh7th/vim-vsnip'
