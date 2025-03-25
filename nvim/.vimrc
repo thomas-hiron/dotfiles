@@ -130,6 +130,7 @@ nnoremap <leader>w <cmd>ArgonautToggle<cr>
 nnoremap <leader>mp <cmd>MarkdownPreview<cr>
 nnoremap <leader>yk <cmd>YAMLYankKey<cr>
 nnoremap <leader>yv <cmd>YAMLYankValue<cr>
+nnoremap <leader>yy mygg"+yG`y
 nnoremap â :bdelete<cr>
 nnoremap ç :cprev<cr>
 nnoremap å :cnext<cr>
