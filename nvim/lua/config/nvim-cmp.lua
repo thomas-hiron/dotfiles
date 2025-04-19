@@ -24,7 +24,9 @@ cmp.setup({
   formatting = {
     format = lspkind.cmp_format({
       before = function (entry, vim_item)
-        if entry.source.name == 'dotenv' then
+        if entry.source.name == 'behat' then
+          vim_item.kind = '🎓 Behat'
+        elseif entry.source.name == 'dotenv' then
           vim_item.kind = '󰀫 Env'
         elseif entry.source.name == 'html_class' then
           vim_item.kind = '📌 Class'
@@ -65,6 +67,7 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
   }, {
+      { name = 'behat' },
       { name = 'html_class' },
       { name = 'path' },
       { name = 'buffer' },
