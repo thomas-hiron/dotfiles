@@ -35,5 +35,5 @@ ip=$(echo "${selected}" | grep -oE "${ip_regex}")
 
 if [ -n "$ip" ]; then
     # Run a terminal in interactive mode, and exec bash to keep terminal open after the session is closed.
-    gnome-terminal -- zsh -ic "ssh admin@$ip; exec bash"
+    xfce4-terminal --command="zsh -ic 'ssh admin@$ip; exec bash'"
 fi
