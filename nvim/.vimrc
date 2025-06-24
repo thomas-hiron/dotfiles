@@ -206,8 +206,8 @@ Plug 'SirVer/ultisnips'
 Plug 'sainnhe/edge'
 
 " Mason
-Plug 'williamboman/mason-lspconfig.nvim'
-Plug 'williamboman/mason.nvim'
+Plug 'mason-org/mason-lspconfig.nvim'
+Plug 'mason-org/mason.nvim'
 
 call plug#end()
 

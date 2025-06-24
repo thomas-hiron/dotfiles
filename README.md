@@ -51,7 +51,7 @@ Then simply run `:PlugInstall`.
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim): shows indentation guides
 - [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mardown-preview](https://github.com/iamcco/markdown-preview.nvim): markdown live preview in the browser
-- [mason](https://github.com/williamboman/mason.nvim): easy LSP integration with lspconfig (with mason-lspconfig)
+- [mason](https://github.com/mason-org/mason.nvim.git): easy LSP integration with lspconfig (with mason-lspconfig)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line
