@@ -56,6 +56,7 @@ Then simply run `:PlugInstall`.
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): entire autocomplete feature
 - [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): rename matching html tags 
+- [snacks](https://github.com/folke/snacks.nvim): collection of small plugins
 - [quickfix-reflector](https://github.com/stefandtw/quickfix-reflector.vim): edit quickfix list
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
   - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search
@@ -70,7 +71,6 @@ Then simply run `:PlugInstall`.
 - [vim-fugitive](https://github.com/tpope/vim-fugitive): mostly for git blame
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-plug](https://github.com/junegunn/vim-plug)
-- [vim-polyglot](https://github.com/sheerun/vim-polyglot): language pack plugin
 - [yaml](https://github.com/cuducos/yaml.nvim): yaml integration (yank key/value, find with Telescope)
 - [yanky](https://github.com/gbprod/yanky.nvim): yank history with Telescope integration
 

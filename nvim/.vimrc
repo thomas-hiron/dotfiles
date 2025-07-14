@@ -160,6 +160,7 @@ Plug 'alvan/vim-php-manual'
 Plug 'https://git.sr.ht/~foosoft/argonaut.nvim'
 Plug 'cuducos/yaml.nvim'
 Plug 'easymotion/vim-easymotion'
+Plug 'folke/snacks.nvim'
 Plug 'gbprod/yanky.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'lewis6991/gitsigns.nvim'
