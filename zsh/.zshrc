@@ -5,6 +5,7 @@ export KEYTIMEOUT=1
 export HISTSIZE=100000
 export SAVEHIST=100000
 export GPG_TTY=$(tty)
+export NODE_OPTIONS=--max-old-space-size=8192
 
 ZSH_THEME="simple"
 
