@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
-export EDITOR="vim"
+export EDITOR="nvim"
 export KEYTIMEOUT=1
 export HISTSIZE=100000
 export SAVEHIST=100000
