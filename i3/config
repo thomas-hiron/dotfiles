@@ -29,8 +29,10 @@ floating_modifier $mod
 # Restore feh background
 exec --no-startup-id ~/.fehbg
 
-# start a terminal
-bindsym $mod+Return exec xfce4-terminal
+# start a terminal, install kitty then run:
+# sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/kitty 10
+# sudo update-alternatives --config x-terminal-emulator
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+a kill
