@@ -1,0 +1,8 @@
+[mgr]
+
+append_keymap = [
+	# Goto
+	{ on = [ "g", "p" ],  run = "cd ~/Pictures/",   desc = "Go to ~/Pictures"  },
+	{ on = [ "g", "v" ],  run = "cd ~/Videos/",     desc = "Go to ~/Videos"    },
+	{ on = [ "g", "u" ],  run = "cd ~/Documents/",  desc = "Go to ~/Documents" }
+]
