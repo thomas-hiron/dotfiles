@@ -72,6 +72,7 @@ Then simply run `:PlugInstall`.
 - [vim-fugitive](https://github.com/tpope/vim-fugitive): mostly for git blame
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-plug](https://github.com/junegunn/vim-plug)
+- [vim-surround](https://github.com/tpope/vim-surround): change surrounding
 - [yaml](https://github.com/cuducos/yaml.nvim): yaml integration (yank key/value, find with Telescope)
 - [yanky](https://github.com/gbprod/yanky.nvim): yank history with Telescope integration
 
