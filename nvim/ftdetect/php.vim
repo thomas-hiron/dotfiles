@@ -3,9 +3,11 @@ autocmd FileType php nmap <Leader>le <Cmd>1call search('extends')<CR>W<Cmd>lua v
 
 " Goes to next view
 autocmd FileType php nmap <Leader>lv <Cmd>call search('render')<CR>t/gf
+autocmd FileType php nmap <Leader>Lv <Cmd>call search('render', 'b')<CR>t/gf
 
 " Goes to next FormType
 autocmd FileType php nmap <Leader>lt <Cmd>call search('Type')<CR>gd
+autocmd FileType php nmap <Leader>Lt <Cmd>call search('Type', 'b')<CR>gd
 
 " Goes to overriden method
 autocmd FileType php nnoremap <Leader>lo :call GoToOverridenMethod()<CR>

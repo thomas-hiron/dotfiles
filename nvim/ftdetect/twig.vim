@@ -24,3 +24,4 @@ autocmd FileType twig nnoremap <buffer> <leader>fu <cmd>call twig#FindUsages()<c
 
 " Goes to next view
 autocmd FileType twig nmap <Leader>lv <Cmd>call search('include')<CR>t/gf
+autocmd FileType twig nmap <Leader>Lv <Cmd>call search('include', 'b')<CR>t/gf
