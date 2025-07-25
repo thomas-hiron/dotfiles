@@ -144,6 +144,10 @@ require('lspconfig').nginx_language_server.setup {
 --   }
 -- }
 
+require('lspconfig').ruby_lsp.setup {
+  capabilities = capabilities,
+}
+
 require('lspconfig').tailwindcss.setup {
   capabilities = capabilities,
   filetypes = {

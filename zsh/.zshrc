@@ -6,6 +6,7 @@ export HISTSIZE=100000
 export SAVEHIST=100000
 export GPG_TTY=$(tty)
 export NODE_OPTIONS=--max-old-space-size=8192
+export GEM_HOME=$HOME/.gem
 
 ZSH_THEME="simple"
 
