@@ -144,6 +144,7 @@ if has('nvim')
 
   autocmd BufReadPost * call general#RestoreCursorPosition()
   autocmd BufWrite *.php,*.js,*.twig,*.html,*.sh,*.yaml,*.yml,*.vim,*.lua,*.feature call general#DeleteTrailingSpace()
+  autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
 end
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
