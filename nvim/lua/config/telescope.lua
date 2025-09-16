@@ -81,6 +81,7 @@ require('telescope').setup {
           ["<C-h>"] = append_prompt({ postfix = " --hidden " }),
           ["<C-t>"] = append_prompt({ postfix = " -t" }),
           ["<C-p>"] = append_prompt({ postfix = " -tphp" }),
+          ["<C-c>"] = append_prompt({ postfix = " --case-sensitive" }),
         }
       }
     }
