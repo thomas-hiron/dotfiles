@@ -58,6 +58,7 @@ Then simply run `:PlugInstall`.
 - [nvim-lualine](https://github.com/nvim-lualine/lualine.nvim): status line
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag): rename matching html tags 
 - [snacks](https://github.com/folke/snacks.nvim): collection of small plugins
+- [trouble](https://github.com/folke/trouble.nvim): pretty diagnostics
 - [quickfix-reflector](https://github.com/stefandtw/quickfix-reflector.vim): edit quickfix list
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
   - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search

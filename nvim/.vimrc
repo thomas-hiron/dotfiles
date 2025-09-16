@@ -79,6 +79,7 @@ nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
 nnoremap <leader>rr <cmd>lua vim.lsp.buf.rename()<cr>
 nnoremap <leader>ra <cmd>lua vim.lsp.buf.code_action()<cr>
 vnoremap <leader>ra <cmd>lua vim.lsp.buf.code_action()<cr>
+nnoremap <leader>d <cmd>Trouble diagnostics toggle focus=false filter.buf=0<cr>
 
 " Tree maping
 nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
@@ -161,15 +162,16 @@ Plug 'alvan/vim-php-manual'
 Plug 'https://git.sr.ht/~foosoft/argonaut.nvim'
 Plug 'cuducos/yaml.nvim'
 Plug 'easymotion/vim-easymotion'
-Plug 'folke/snacks.nvim'
 Plug 'folke/flash.nvim'
+Plug 'folke/trouble.nvim'
+Plug 'folke/snacks.nvim'
 Plug 'gbprod/yanky.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
@@ -217,4 +219,7 @@ call plug#end()
 
 if has('nvim')
   lua require('config')
+
+  " Enable diagnostics
+  lua vim.diagnostic.config({ virtual_text = true })
 endif
