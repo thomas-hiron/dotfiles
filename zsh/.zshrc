@@ -31,7 +31,7 @@ alias gf="git fetch"
 alias gsw="git switch"
 alias gpr="git pull --rebase"
 
-# git commit clickup
+# git commit clickup/plane
 function gcc() {
     branch_name=$(git rev-parse --abbrev-ref HEAD | cut -d'_' -f1)
     git commit -m "$branch_name - $1"
@@ -69,6 +69,8 @@ function generate_html_class_autocomplete() {
 
 source ~/.oh-my-zsh/custom/plugins/zsh-abbr/zsh-abbr.zsh
 abbr m="make" 2>/dev/null
+abbr pb="plane_branch.sh" 2>/dev/null
+abbr pt="plane_task.sh" 2>/dev/null
 
 source <(fzf --zsh)
 
