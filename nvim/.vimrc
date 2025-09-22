@@ -100,6 +100,7 @@ onoremap aa :<C-U>ArgonautObject outer<CR>
 
 " Symfony
 nnoremap <leader>s <cmd>SymfonyGoto<cr>
+nnoremap <leader>se <cmd>SymfonyFindEventListeners<cr>
 command! -nargs=1 SymfonyGotoRouteView call general#GotoTwigView(<f-args>)
 command! -nargs=1 SymfonyGotoFormType call general#GotoFormType(<f-args>)
 
