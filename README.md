@@ -50,7 +50,6 @@ Then simply run `:PlugInstall`.
 - [flash](https://github.com/folke/flash.nvim): improve code navigation
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim): shows indentation guides
-- [lspconfig](https://github.com/neovim/nvim-lspconfig): multi LSP preconfigurations
 - [mardown-preview](https://github.com/iamcco/markdown-preview.nvim): markdown live preview in the browser
 - [mason](https://github.com/mason-org/mason.nvim.git): easy LSP integration with lspconfig (with mason-lspconfig)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)

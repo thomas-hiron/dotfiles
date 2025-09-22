@@ -20,3 +20,5 @@ require('config/tree')
 require('config/tree-sitter')
 require('config/yaml')
 require('config/yanky')
+
+require('config/lspconfig')
