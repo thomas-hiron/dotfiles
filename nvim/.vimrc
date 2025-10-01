@@ -126,6 +126,14 @@ nnoremap <leader>bxo <cmd>BufferCloseAllButCurrent<cr>
 nnoremap <leader>bml <cmd>BufferMovePrevious<cr>
 nnoremap <leader>bmr <cmd>BufferMoveNext<cr>
 
+" Dap
+nnoremap <leader>db <cmd>DapToggleBreakpoint<cr>
+nnoremap <leader>dn <cmd>DapNew<cr>
+nnoremap <leader>di <cmd>DapStepInto<cr>
+nnoremap <leader>do <cmd>DapStepOut<cr>
+nnoremap <leader>dv <cmd>DapStepOver<cr>
+nnoremap <leader>du <cmd>lua require('dapui').toggle()<cr>
+
 " Others
 nnoremap J mzJ`z " Keep the cursor in place while joining lines
 map q: :q
@@ -214,6 +222,11 @@ Plug 'sainnhe/edge'
 " Mason
 Plug 'mason-org/mason-lspconfig.nvim'
 Plug 'mason-org/mason.nvim'
+
+" Dap
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-neotest/nvim-nio'
+Plug 'rcarriga/nvim-dap-ui'
 
 call plug#end()
 

@@ -43,6 +43,7 @@ Then simply run `:PlugInstall`.
 ### Installed plugins
 - [argonaut](https://git.sr.ht/~foosoft/argonaut.nvim): wrap/unwrap arguments
 - [barbar](https://github.com/romgrk/barbar.nvim): buffer as tabs
+- [dap](https://github.com/mfussenegger/nvim-dap): dap client for xDebug
 - [diffview](https://github.com/sindrets/diffview.nvim): cycle through git diffs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
 - [easy-motion](https://github.com/easymotion/vim-easymotion): move rapidly into current buffer

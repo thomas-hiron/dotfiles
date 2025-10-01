@@ -1,5 +1,6 @@
 require('config/argonaut')
 require('config/barbar')
+require('config/dap')
 require('config/diffview')
 require('config/edge')
 require('config/flash')
