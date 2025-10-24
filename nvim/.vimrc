@@ -42,8 +42,7 @@ set secure
 
 " Easymotion
 let g:EasyMotion_do_mapping = 0
-nnoremap <leader>j <Plug>(easymotion-w)
-nnoremap <leader>k <Plug>(easymotion-b)
+nnoremap <leader>k <cmd>lua require("flash").jump()<cr>
 
 " Telescope mapping
 nnoremap <leader>ff <cmd>Telescope find_files<cr>

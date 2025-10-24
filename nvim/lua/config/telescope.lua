@@ -31,6 +31,28 @@ local function append_prompt(opts)
   end
 end
 
+local function flash(prompt_bufnr)
+  require("flash").jump({
+    pattern = "^",
+    label = {
+      after = {0, 0},
+    },
+    search = {
+      mode = "search",
+      exclude = {
+        function(win)
+          return vim.bo[vim.api.nvim_win_get_buf(win)].filetype ~= 'TelescopeResults'
+        end,
+      },
+    },
+    action = function(match)
+      local picker = require('telescope.actions.state').get_current_picker(prompt_bufnr)
+      picker:set_selection(match.pos[1] - 1)
+      require('telescope.actions').select_default(prompt_bufnr)
+    end,
+  })
+end
+
 require('telescope').setup {
   defaults = {
     cache_picker = {
@@ -44,11 +66,8 @@ require('telescope').setup {
       width = 0.95
     },
     mappings = {
-      n = {
-        ['þ'] = require('telescope.actions').delete_buffer
-      },
       i = {
-        ['þ'] = require('telescope.actions').delete_buffer,
+        ['<c-s>'] = flash,
         ['<esc>'] = require('telescope.actions').close,
       }
     },

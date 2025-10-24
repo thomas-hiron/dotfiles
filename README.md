@@ -46,7 +46,6 @@ Then simply run `:PlugInstall`.
 - [dap](https://github.com/mfussenegger/nvim-dap): dap client for xDebug
 - [diffview](https://github.com/sindrets/diffview.nvim): cycle through git diffs
 - [dressing](https://github.com/stevearc/dressing.nvim): vim.ui interface
-- [easy-motion](https://github.com/easymotion/vim-easymotion): move rapidly into current buffer
 - [edge](https://github.com/sainnhe/edge): color theme (goes with [xfce4-terminal theme](https://github.com/xelser/edge-xfce4-terminal/blob/main/edge-light.theme))
 - [flash](https://github.com/folke/flash.nvim): improve code navigation
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim): simple git integration
