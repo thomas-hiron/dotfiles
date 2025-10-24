@@ -166,7 +166,6 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Global plugins
-Plug 'akinsho/toggleterm.nvim'
 Plug 'alvan/vim-php-manual'
 Plug 'https://git.sr.ht/~foosoft/argonaut.nvim'
 Plug 'cuducos/yaml.nvim'
