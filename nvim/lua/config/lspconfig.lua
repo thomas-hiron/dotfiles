@@ -6,6 +6,7 @@ vim.lsp.enable({
   'dockerls',
   'emmet_language_server',
   'gitlab_ci_ls',
+  'gopls',
   'intelephense',
   'lua_ls',
   'ruby_lsp',

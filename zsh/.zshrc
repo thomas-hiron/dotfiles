@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH"
 export EDITOR="nvim"
 export KEYTIMEOUT=1
 export HISTSIZE=100000

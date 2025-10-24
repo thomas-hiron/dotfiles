@@ -4,6 +4,7 @@ require'nvim-treesitter.configs'.setup {
     "c",
     "css",
     "dockerfile",
+    "go",
     "html",
     "javascript",
     "lua",
