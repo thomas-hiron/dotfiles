@@ -3,7 +3,7 @@ local function find_usages()
 
   -- Wait 100 ms to let cmd finish
   vim.defer_fn(function()
-    local key = '"' .. vim.fn.getreg('"') .. '" -ttwig -tphp'
+    local key = '"' .. vim.fn.getreg('"') .. '" -ttwig -tphp -w'
 
     if key and key ~= "" then
       require('telescope').extensions.live_grep_args.live_grep_args({default_text = key})
