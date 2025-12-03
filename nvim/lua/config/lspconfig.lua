@@ -9,6 +9,7 @@ vim.lsp.enable({
   'gopls',
   'intelephense',
   'lua_ls',
+  'python',
   'ruby_lsp',
   'tailwindcss',
   'ts_ls',
