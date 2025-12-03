@@ -18,6 +18,7 @@ require('config/trouble')
 require('config/telescope')
 require('config/tree')
 require('config/tree-sitter')
+require('config/tree-sitter-context')
 require('config/yaml')
 require('config/yanky')
 

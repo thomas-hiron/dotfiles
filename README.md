@@ -65,6 +65,7 @@ Then simply run `:PlugInstall`.
   - [telescope-all-recent](https://github.com/prochri/telescope-all-recent.nvim): sort pickers by mostly used results
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter): with text objects plugin
+- [tree-sitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context): shows code context
 - [ulti-snips](https://github.com/SirVer/ultisnips/): snippets integration
 - [vim-abolish](https://github.com/tpope/vim-abolish): better substitution and coercion
 - [vim-commentary](https://github.com/tpope/vim-commentary): comment stuff out

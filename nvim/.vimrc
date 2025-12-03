@@ -184,6 +184,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'romgrk/barbar.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'shumphrey/fugitive-gitlab.vim'
