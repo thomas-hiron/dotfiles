@@ -14,6 +14,7 @@ require'nvim-treesitter.configs'.setup {
     "php",
     "query",
     "ruby",
+    "scss",
     "twig",
     "vim",
     "vimdoc",
