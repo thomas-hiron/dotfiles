@@ -1,31 +1,31 @@
-require'nvim-treesitter'.setup {}
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = {
-    "c",
-    "css",
-    "dockerfile",
-    "go",
-    "html",
-    "javascript",
-    "lua",
-    "make",
-    "markdown",
-    "markdown_inline",
-    "php",
-    "query",
-    "ruby",
-    "scss",
-    "twig",
-    "vim",
-    "vimdoc",
-    "vue",
-    "yaml",
-  },
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false,
-  },
-  indent = {
-    enable = true
-  },
+local filetypes = {
+  "c",
+  "css",
+  "dockerfile",
+  "go",
+  "html",
+  "javascript",
+  "lua",
+  "make",
+  "markdown",
+  "markdown_inline",
+  "php",
+  "query",
+  "ruby",
+  "scss",
+  "twig",
+  "vim",
+  "vimdoc",
+  "vue",
+  "yaml",
 }
+
+require'nvim-treesitter'.install(filetypes)
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = filetypes,
+  callback = function()
+    vim.treesitter.start()
+    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+  end,
+})
