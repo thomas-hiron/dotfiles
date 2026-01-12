@@ -72,6 +72,7 @@ abbr m="make" 2>/dev/null
 abbr pb="plane_branch.sh" 2>/dev/null
 abbr pt="plane_task.sh" 2>/dev/null
 
+eval "$(starship init zsh)"
 source <(fzf --zsh)
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
