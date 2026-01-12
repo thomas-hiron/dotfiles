@@ -87,9 +87,6 @@ nnoremap <leader>tr <cmd>NvimTreeRefresh<cr>
 
 " Git
 nnoremap <leader>gb <cmd>Git blame<cr>
-nnoremap <leader>gd <cmd>DiffviewOpen<cr>
-nnoremap <leader>gc <cmd>DiffviewClose<cr>
-nnoremap <leader>gf <cmd>DiffviewFileHistory --follow %<cr>
 
 " Argonaut
 xnoremap ia :<C-U>ArgonautObject inner<CR>
@@ -188,7 +185,6 @@ Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'romgrk/barbar.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'shumphrey/fugitive-gitlab.vim'
-Plug 'sindrets/diffview.nvim'
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'stevearc/dressing.nvim'
 Plug 'thomas-hiron/symfony-goto.nvim'
