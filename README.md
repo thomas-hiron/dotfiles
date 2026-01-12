@@ -20,8 +20,10 @@ There is not much custom configuration:
 - [feh](https://github.com/derf/feh): background utility
 - [greenclip](https://github.com/erebe/greenclip): clipboard manager
 - [maim](https://github.com/naelstrof/maim): screenshot utility
+- playerctl
 - [polybar](https://github.com/polybar/polybar): top bar, see below
 - [rofi](https://github.com/davatorium/rofi): dmenu replacement, with clipboard integration
+- [starship](https://starship.rs): shell prompt
 
 ## neovim configuration
 
@@ -142,5 +144,6 @@ There is a `launch.sh` script that starts the bar on each monitor.
 
 The network dropdown has been taken from https://github.com/P3rf/rofi-network-manager.
 
-### Prerequisites
-- playerctl
+## starship configuration
+
+[starship](https://starship.rs) configuration should go to `$XDG_CONFIG_HOME/starship.toml`.  
