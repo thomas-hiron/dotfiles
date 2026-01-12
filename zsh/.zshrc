@@ -2,8 +2,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH"
 export EDITOR="nvim"
 export KEYTIMEOUT=1
-export HISTSIZE=100000
-export SAVEHIST=100000
+export HISTSIZE=10000000
+export SAVEHIST=$HISTSIZE
 export GPG_TTY=$(tty)
 export NODE_OPTIONS=--max-old-space-size=8192
 export GEM_HOME=$HOME/.gem
