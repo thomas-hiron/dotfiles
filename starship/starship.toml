@@ -24,7 +24,7 @@ success_symbol = '[➜](bold green)'
 
 [cmd_duration]
 min_time = 500
-format = 'underwent [$duration](bold yellow)'
+format = 'took [$duration](bold yellow)'
 
 [directory]
 truncation_length = 255
