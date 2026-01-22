@@ -35,6 +35,6 @@ function general#GotoFormType(route)
     let buffer = bufnr('%')
 
     " Open view and close previous buffer
-    normal gd
+    lua vim.lsp.buf.definition()
     execute 'bd ' buffer
 endfunc
