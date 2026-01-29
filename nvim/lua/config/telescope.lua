@@ -73,7 +73,7 @@ require('telescope').setup {
     },
     path_display = filename_first,
     preview = {
-      filesize_limit = 0.05,
+      filesize_limit = 0.1,
     }
   },
   pickers = {
