@@ -3,6 +3,7 @@ autocmd FileType twig setlocal commentstring={#\ %s\ #}
 set textwidth=0 " do not automatically wrap text when typing
 
 function! GetTwigIndent()
+    let l:line = getline(v:lnum)
     let l:prev_line = getline(v:lnum - 1)
     let l:next_line = getline(v:lnum + 1)
 
@@ -19,12 +20,16 @@ function! GetTwigIndent()
         return indent(prevnonblank(v:lnum - 1)) + &shiftwidth
 
     " Prev line ends with {, increment
-    elseif l:prev_line =~ '{$'
+    elseif l:prev_line =~ '{\s*$'
         return indent(prevnonblank(v:lnum - 1)) + &shiftwidth
 
     " Next line starts with }, increment
     elseif l:next_line =~ '^\s*}'
         return indent(nextnonblank(v:lnum + 1)) + &shiftwidth
+
+    " Current line starts with }, decrement
+    elseif l:line =~ '^\s*}'
+        return indent(prevnonblank(v:lnum)) - &shiftwidth
 
     " Else, apply nextnonblank indent, works generally better that prevnonblank
     else
