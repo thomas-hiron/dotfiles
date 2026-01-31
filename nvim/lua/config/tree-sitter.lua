@@ -24,8 +24,11 @@ require'nvim-treesitter'.install(filetypes)
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = filetypes,
-  callback = function()
+  callback = function(ev)
     vim.treesitter.start()
-    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+
+    if ev.match ~= 'twig' then
+      vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    end
   end,
 })
