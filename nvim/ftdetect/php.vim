@@ -18,6 +18,12 @@ autocmd FileType php nmap <Leader>ll ^t(gd
 " Opens PhpMyAdmin for current Doctrine entity
 autocmd FileType php nmap <Leader>sp :call OpenPhpMyAdmin()<CR>
 
+" Find class usages
+autocmd FileType php nmap <Leader>cu :call FindClassUsages()<CR>
+
+" Find method usages
+autocmd FileType php nmap <Leader>mu :call FindMethodUsages()<CR>
+
 function! GoToOverridenMethod()
     let line = getline('.')
     let pattern = '\v^.+\('
@@ -25,6 +31,28 @@ function! GoToOverridenMethod()
     normal ,le
     sleep 1000m
     execute '/\V' . match
+endfunction
+
+function! FindClassUsages()
+    normal mi
+    call search('^\(abstract \|final \)\?class ', 'b')
+    normal k
+    call search('class')
+    normal w
+
+    lua require('telescope.builtin').lsp_references { include_declaration = false }
+
+    normal `i
+endfunction
+
+function! FindMethodUsages()
+    normal mi
+    call search('\(public\|protected\|private\) \(static \)\?function ', 'b')
+    normal t(b
+
+    lua require('telescope.builtin').lsp_references { include_declaration = false }
+
+    normal `i
 endfunction
 
 " This is overriden in local .nvimrc to customize DB_NAME
