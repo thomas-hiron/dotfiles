@@ -29,7 +29,7 @@ alias gco="git checkout"
 alias gbd="git branch -d"
 alias gf="git fetch"
 alias gsw="git switch"
-alias gpr="git pull --rebase"
+alias gpr="git pull --rebase --recurse-submodules"
 
 # git commit clickup/plane
 function gcc() {
