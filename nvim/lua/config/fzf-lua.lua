@@ -13,6 +13,9 @@ require("fzf-lua").setup {
       ["ctrl-h"] = { actions.toggle_hidden },
     },
   },
+  fzf_args = {
+    "--cycle"
+  },
   grep = {
     rg_glob = true,
     rg_glob_fn = function(query, opts)
@@ -47,5 +50,5 @@ require("fzf-lua").setup {
       -- Use <c-q> to select all items and add them to the quickfix list
       ["ctrl-q"] = "select-all+accept",
     },
-  }
+  },
 }
