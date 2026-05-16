@@ -12,6 +12,7 @@ vim.lsp.enable({
   'python',
   'ruby_lsp',
   'tailwindcss',
+  'twiggy_language_server',
   'ts_ls',
   'yamlls',
 })
