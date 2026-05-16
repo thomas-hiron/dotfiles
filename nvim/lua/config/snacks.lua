@@ -4,5 +4,6 @@ require('snacks').setup({
       duration = { step = 15, total = 50 },
       easing = "linear",
     },
-  }
+  },
+  image = { },
 })
