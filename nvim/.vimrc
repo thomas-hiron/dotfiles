@@ -56,6 +56,7 @@ nnoremap <space>b <cmd>FzfLua buffers<cr>
 nnoremap <space>o <cmd>FzfLua oldfiles<cr>
 nnoremap <space>s <cmd>FzfLua resume<cr>
 vnoremap <space>v <cmd>FzfLua grep_visual<cr>
+nnoremap <space>y <cmd>lua Snacks.picker.yanky()<cr>
 nnoremap <expr> <space>w ':FzfLua live_grep<cr>' . expand('<cword>')
 nnoremap gd <cmd>lua require("fzf-lua").lsp_definitions({ jump1 = true })<cr>
 nnoremap gr <cmd>lua require("fzf-lua").lsp_references({ jump1 = true, includeDeclaration = false })<cr>
