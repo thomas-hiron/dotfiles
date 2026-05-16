@@ -31,7 +31,7 @@ This configuration is optimized for a PHP environment.
 Javascript, Yaml, Twig, Json, Behat, CSS are also needed.
 
 ### Prerequisites
-- [ripgrep](https://github.com/BurntSushi/ripgrep): for telescope search
+- [ripgrep](https://github.com/BurntSushi/ripgrep): for FzfLua search
 - [nerdfonts](https://www.nerdfonts.com/): specificaly Hack Nerd Font or JetBrainsMono Nerd Font
 - Node (with NPM) for tsserver and others LSP
 - PHP and Composer for phpactor
@@ -60,10 +60,7 @@ Then simply run `:PlugInstall`.
 - [snacks](https://github.com/folke/snacks.nvim): collection of small plugins
 - [trouble](https://github.com/folke/trouble.nvim): pretty diagnostics
 - [quickfix-reflector](https://github.com/stefandtw/quickfix-reflector.vim): edit quickfix list
-- [telescope](https://github.com/nvim-telescope/telescope.nvim)
-  - [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim): better file search
-  - [telescope-live-grep-args](https://github.com/nvim-telescope/telescope-live-grep-args.nvim): usage of rg args
-  - [telescope-all-recent](https://github.com/prochri/telescope-all-recent.nvim): sort pickers by mostly used results
+- [fzf-lua](https://github.com/ibhagwan/fzf-lua): fzf search everything
 - [tree](https://github.com/nvim-tree/nvim-tree.lua): with [web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter): with text objects plugin
 - [tree-sitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context): shows code context
@@ -74,8 +71,8 @@ Then simply run `:PlugInstall`.
 - [vim-illuminate](https://github.com/RRethy/vim-illuminate): match words under cursor
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-surround](https://github.com/tpope/vim-surround): change surrounding
-- [yaml](https://github.com/cuducos/yaml.nvim): yaml integration (yank key/value, find with Telescope)
-- [yanky](https://github.com/gbprod/yanky.nvim): yank history with Telescope integration
+- [yaml](https://tangled.org/cuducos.me/yaml.nvim): yaml integration (yank key/value, find with Telescope)
+- [yanky](https://github.com/gbprod/yanky.nvim): yank history with picker integration
 
 ### Installing a new plugin
 1. Add the new plugin (with Plug) in the `.vimrc` inside the `plug` block.
@@ -110,17 +107,6 @@ Installing a LSP is made easy with mason-lspconfig, just run the following comma
 ```
 
 The corresponding LSP are attached in `lua/config/nvim-cmp.lua`.
-
-### Troubleshooting
-
-#### LSP
-`:LspInfo` gives great infos about errors of LSP not correctly setup
-
-#### Telescope FZF
-If fzf fails to install, go to the plugin dir `$XDG_CONFIG_HOME/nvim/plugged/telescope-fzf-native.nvim` and run make: 
-```bash
-make
-```
 
 ### Tips
 

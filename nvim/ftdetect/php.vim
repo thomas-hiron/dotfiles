@@ -40,7 +40,7 @@ function! FindClassUsages()
     call search('class')
     normal w
 
-    lua require('telescope.builtin').lsp_references { include_declaration = false }
+    lua require('fzf-lua.providers.lsp').references({ includeDeclaration = false })
 
     normal `i
 endfunction
@@ -50,7 +50,7 @@ function! FindMethodUsages()
     call search('\(public\|protected\|private\) \(static \)\?function ', 'b')
     normal t(b
 
-    lua require('telescope.builtin').lsp_references { include_declaration = false }
+    lua require('fzf-lua.providers.lsp').references({ includeDeclaration = false })
 
     normal `i
 endfunction

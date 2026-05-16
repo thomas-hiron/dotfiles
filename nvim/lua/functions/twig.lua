@@ -1,6 +1,6 @@
 local function find_usages()
   local filepath = vim.fn.expand('%'):gsub("templates/", "")
-  require('telescope').extensions.live_grep_args.live_grep_args({default_text = filepath})
+  require('fzf-lua.providers.grep').live_grep({search = filepath})
 end
 
 return {

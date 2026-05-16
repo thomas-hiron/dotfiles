@@ -44,34 +44,25 @@ set secure
 let g:EasyMotion_do_mapping = 0
 nnoremap <leader>k <cmd>lua require("flash").jump()<cr>
 
-" Telescope mapping
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fa <cmd>Telescope find_files no_ignore=true<cr>
+" FzfLua mapping
+nnoremap <space>f <cmd>FzfLua files<cr>
+nnoremap <space>a <cmd>FzfLua files fd_opts='--no-ignore'<cr>
 " Find exact file under cursor
-nnoremap <expr> <leader>fd ':Telescope find_files<cr>' . "'" . expand('<cword>')
-" Open telescope with current nvim-tree directory
-nnoremap <silent> <leader>fe :lua require('telescope.builtin').find_files({search_dirs = {require("nvim-tree.api").tree.get_node_under_cursor().absolute_path}})<cr>
+nnoremap <expr> <space>d ':FzfLua files<cr>' . "'" . expand('<cword>')
 " Live grep with current nvim-tree directory
-nnoremap <silent> <leader>fz :lua require('telescope').extensions.live_grep_args.live_grep_args({search_dirs = {require("nvim-tree.api").tree.get_node_under_cursor().absolute_path}})<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep_args<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fr <cmd>Telescope registers<cr>
-nnoremap <leader>fo <cmd>Telescope oldfiles cwd_only=true<cr>
-nnoremap <leader>fs <cmd>Telescope resume<cr>
-nnoremap <leader>ft <cmd>Telescope help_tags<cr>
-nnoremap <leader>fp <cmd>Telescope pickers<cr>
-vnoremap <leader>fv <cmd>lua require("telescope-live-grep-args.shortcuts").grep_visual_selection()<cr>
-nnoremap <leader>fw <cmd>lua require("telescope-live-grep-args.shortcuts").grep_word_under_cursor()<cr>
-nnoremap <leader>fy <cmd>Telescope yank_history<cr>
-nnoremap <leader>tp <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find PHP files", find_command = {'fd', '--extension', 'php'} }<cr>
-nnoremap <leader>tj <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find Javascript files", find_command = {'fd', '--extension', 'js'} }<cr>
-nnoremap <leader>ty <cmd>lua require('telescope.builtin').find_files { prompt_title = "Find Yaml files", find_command = {'fd', '--extension', 'yml', '--extension', 'yaml'} }<cr>
-nnoremap gd <cmd>Telescope lsp_definitions<cr>
-nnoremap gr <cmd>lua require('telescope.builtin').lsp_references { include_declaration = false }<cr>
-nnoremap gi <cmd>Telescope lsp_implementations<cr>
-nnoremap gss <cmd>Telescope lsp_document_symbols<cr>
-nnoremap gsm <cmd>Telescope lsp_document_symbols default_text=:method:<cr>
-nnoremap gsp <cmd>Telescope lsp_document_symbols default_text=:property:<cr>
+nnoremap <silent> <leader>fz :lua require('fzf-lua').live_grep({cwd = require("nvim-tree.api").tree.get_node_under_cursor().absolute_path})<cr>
+nnoremap <space>g <cmd>FzfLua live_grep<cr>
+nnoremap <space>b <cmd>FzfLua buffers<cr>
+nnoremap <space>o <cmd>FzfLua oldfiles<cr>
+nnoremap <space>s <cmd>FzfLua resume<cr>
+vnoremap <space>v <cmd>FzfLua grep_visual<cr>
+nnoremap <expr> <space>w ':FzfLua live_grep<cr>' . expand('<cword>')
+nnoremap gd <cmd>lua require("fzf-lua").lsp_definitions({ jump1 = true })<cr>
+nnoremap gr <cmd>lua require("fzf-lua").lsp_references({ jump1 = true, includeDeclaration = false })<cr>
+nnoremap gi <cmd>FzfLua lsp_implementations<cr>
+nnoremap gss <cmd>FzfLua lsp_document_symbols<cr>
+nnoremap gsm <cmd>FzfLua lsp_document_symbols regex_filter=Method]<cr>
+nnoremap gsp <cmd>FzfLua lsp_document_symbols regex_filter=Property]<cr>
 
 " LSP mapping
 nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
@@ -164,20 +155,18 @@ call plug#begin('~/.config/nvim/plugged')
 " Global plugins
 Plug 'alvan/vim-php-manual'
 Plug 'https://git.sr.ht/~foosoft/argonaut.nvim'
-Plug 'cuducos/yaml.nvim'
+Plug 'https://tangled.org/cuducos.me/yaml.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'folke/flash.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'folke/snacks.nvim'
 Plug 'gbprod/yanky.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'ibhagwan/fzf-lua'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-Plug 'nvim-telescope/telescope-live-grep-args.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
@@ -194,10 +183,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
-
-" Telescope picker order
-Plug 'kkharji/sqlite.lua' " telescope-all-recent dep
-Plug 'prochri/telescope-all-recent.nvim' " Order pickers by most used
 
 " Aucomplete plugins
 Plug 'hrsh7th/cmp-buffer' " Autocomplete with words in current buffer
