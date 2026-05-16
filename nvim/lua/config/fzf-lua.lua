@@ -11,6 +11,10 @@ require("fzf-lua").setup {
     actions = {
       ["ctrl-i"] = { actions.toggle_ignore },
       ["ctrl-h"] = { actions.toggle_hidden },
+      ["ctrl-g"] = function()
+        local query = require('fzf-lua').get_last_query()
+        require('fzf-lua').live_grep({ search = query })
+      end,
     },
   },
   fzf_args = {
@@ -23,6 +27,12 @@ require("fzf-lua").setup {
 
       return (regex or query), flags
     end,
+    actions = {
+      ["ctrl-g"] = function()
+        local query = require('fzf-lua').get_last_query()
+        require('fzf-lua').files({ query = query })
+      end,
+    },
     winopts = {
       on_create = function(e)
         vim.keymap.set('t', '<c-k>', function() vim.api.nvim_paste(' -- ', false, -1) end, { buffer = e.bufnr })
