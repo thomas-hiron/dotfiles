@@ -1,3 +1,5 @@
+local actions = require("fzf-lua.actions")
+
 require("fzf-lua").setup {
   { "ivy", "hide" },
   defaults = {
@@ -6,6 +8,10 @@ require("fzf-lua").setup {
   },
   files = {
     cwd_prompt = false,
+    actions = {
+      ["ctrl-i"] = { actions.toggle_ignore },
+      ["ctrl-h"] = { actions.toggle_hidden },
+    },
   },
   grep = {
     rg_glob = true,
@@ -34,7 +40,7 @@ require("fzf-lua").setup {
   keymap = {
     builtin = {
       ["<C-d>"]      = "preview-page-down",
-      ["<C-t>"]      = "preview-page-up",
+      ["<C-u>"]      = "preview-page-up",
     },
     fzf = {
       true,
