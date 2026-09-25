@@ -11,6 +11,7 @@ vim.lsp.enable({
   'lua_ls',
   'python',
   'ruby_lsp',
+  'symfony_lsp',
   'tailwindcss',
   'twiggy_language_server',
   'ts_ls',
