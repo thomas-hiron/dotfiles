@@ -21,6 +21,7 @@ alias ad="sudo apt update"
 alias ag="sudo apt upgrade"
 
 alias ga="git add ."
+alias gd="git diff"
 alias gl="git log --oneline"
 alias gc="git commit -m"
 alias gs="git status"
@@ -29,6 +30,7 @@ alias gco="git checkout"
 alias gbd="git branch -d"
 alias gf="git fetch"
 alias gsw="git switch"
+alias gp="git push"
 alias gpr="git pull --rebase --recurse-submodules"
 
 # git commit clickup/plane
@@ -46,12 +48,6 @@ alias dk="docker kill"
 
 alias mr="make restart"
 alias mp="make php-cs-fixer"
-
-alias tldr="docker run --rm tldr tldr"
-
-function calc() {
-  echo "$1" | bc -l
-}
 
 function generate_html_class_autocomplete() {
     temp_dir=$(mktemp -d)
@@ -82,6 +78,22 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --color=border:#bac3cb,label:#aeaeae,query:#7a92a9
     --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
     --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
+
+# Lazy load nvm
+export NVM_DIR="$HOME/.nvm"
+nvm() {
+  unset -f nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  nvm "$@"
+}
+
+yarn() {
+  unset -f yarn
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  yarn "$@"
+}
 
 # Non versionnable file
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
