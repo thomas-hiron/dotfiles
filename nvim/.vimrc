@@ -136,6 +136,10 @@ nnoremap å :cnext<cr>
 nnoremap <C-l> :noh<cr>
 nnoremap <leader>o :only<cr>
 
+" Preserve selection after indent
+xnoremap <  <gv
+xnoremap >  >gv
+
 " autocmd
 if has('nvim')
   set cursorline
