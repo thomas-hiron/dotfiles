@@ -5,4 +5,9 @@ require('flash').setup({
   prompt = {
     enabled = false,
   },
+  modes = {
+    char = {
+      multi_line = false,
+    }
+  }
 })
