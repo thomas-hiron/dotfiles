@@ -7,6 +7,7 @@ export SAVEHIST=$HISTSIZE
 export GPG_TTY=$(tty)
 export NODE_OPTIONS=--max-old-space-size=8192
 export GEM_HOME=$HOME/.gem
+ export MANPAGER='nvim --appimage-extract-and-run +Man!'
 
 ZSH_THEME="simple"
 
